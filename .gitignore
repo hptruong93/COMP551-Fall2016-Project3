@@ -87,3 +87,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# vim
+*.swp
+
+# data directory
+data/*
+models/mnist/data/*
