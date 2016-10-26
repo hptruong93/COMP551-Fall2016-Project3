@@ -48,7 +48,7 @@ def load_dataset():
         # reshape into 2D images 
         # shape format: (examples, channels, rows, columns)
         data = data.reshape(-1, 1, 28, 28)
-        return data
+        return data / np.float32(256)
 
     @require_download
     def load_labels(filename):
