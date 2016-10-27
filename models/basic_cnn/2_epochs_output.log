@@ -1,0 +1,17 @@
+Building model and functions
+Starting training
+Writing intermediate params to: /Users/amielkollekb/Google Drive/Fall 2016/COMP 551/Project 3/models/basic_cnn/basic_cnn_model.tmp.npz
+Epoch 1 of 3 took 2323.819s
+  training loss:                2.806283
+  validation loss:              2.790549
+  validation accuracy:          10.17 %
+Updating intermediate params file
+Epoch 2 of 3 took 2341.259s
+  training loss:                2.774616
+  validation loss:              2.770745
+  validation accuracy:          9.95 %
+Updating intermediate params file
+
+NOTE: I (Amiel) killed it after two epochs because the results
+were bad it it was taking so long. The params file added here has 
+two epochs of training at time of commiting
