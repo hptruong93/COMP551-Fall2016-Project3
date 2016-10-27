@@ -1,0 +1,2511 @@
+Loading data
+Building model and functions
+Starting training
+Writing intermediate params to: /Users/amielkollekb/Google Drive/Fall 2016/COMP 551/Project 3/models/mnist/cnn_model.tmp.npz
+Epoch 1 of 500 took 104.057s
+  training loss:		0.633526
+  validation loss:		0.304754
+  validation accuracy:		91.23 %
+Updating intermediate params file
+Epoch 2 of 500 took 1947.043s
+  training loss:		0.321070
+  validation loss:		0.253948
+  validation accuracy:		92.82 %
+Updating intermediate params file
+Epoch 3 of 500 took 108.352s
+  training loss:		0.267488
+  validation loss:		0.208442
+  validation accuracy:		94.35 %
+Updating intermediate params file
+Epoch 4 of 500 took 106.685s
+  training loss:		0.215303
+  validation loss:		0.167769
+  validation accuracy:		95.51 %
+Updating intermediate params file
+Epoch 5 of 500 took 107.499s
+  training loss:		0.175457
+  validation loss:		0.136316
+  validation accuracy:		96.38 %
+Updating intermediate params file
+Epoch 6 of 500 took 103.285s
+  training loss:		0.149081
+  validation loss:		0.116303
+  validation accuracy:		96.90 %
+Updating intermediate params file
+Epoch 7 of 500 took 103.879s
+  training loss:		0.130066
+  validation loss:		0.102340
+  validation accuracy:		97.23 %
+Updating intermediate params file
+Epoch 8 of 500 took 103.557s
+  training loss:		0.116167
+  validation loss:		0.092963
+  validation accuracy:		97.41 %
+Updating intermediate params file
+Epoch 9 of 500 took 103.990s
+  training loss:		0.105889
+  validation loss:		0.084219
+  validation accuracy:		97.59 %
+Updating intermediate params file
+Epoch 10 of 500 took 104.281s
+  training loss:		0.099304
+  validation loss:		0.078253
+  validation accuracy:		97.79 %
+Updating intermediate params file
+Epoch 11 of 500 took 110.316s
+  training loss:		0.093855
+  validation loss:		0.073080
+  validation accuracy:		97.93 %
+Updating intermediate params file
+Epoch 12 of 500 took 109.983s
+  training loss:		0.088419
+  validation loss:		0.069818
+  validation accuracy:		97.93 %
+Updating intermediate params file
+Epoch 13 of 500 took 108.808s
+  training loss:		0.083989
+  validation loss:		0.066851
+  validation accuracy:		98.10 %
+Updating intermediate params file
+Epoch 14 of 500 took 111.401s
+  training loss:		0.081257
+  validation loss:		0.065512
+  validation accuracy:		98.07 %
+Updating intermediate params file
+Epoch 15 of 500 took 106.401s
+  training loss:		0.077364
+  validation loss:		0.062609
+  validation accuracy:		98.12 %
+Updating intermediate params file
+Epoch 16 of 500 took 104.872s
+  training loss:		0.074616
+  validation loss:		0.060143
+  validation accuracy:		98.17 %
+Updating intermediate params file
+Epoch 17 of 500 took 111.410s
+  training loss:		0.072353
+  validation loss:		0.057901
+  validation accuracy:		98.25 %
+Updating intermediate params file
+Epoch 18 of 500 took 111.942s
+  training loss:		0.070813
+  validation loss:		0.058252
+  validation accuracy:		98.24 %
+Updating intermediate params file
+Epoch 19 of 500 took 106.637s
+  training loss:		0.067726
+  validation loss:		0.056631
+  validation accuracy:		98.30 %
+Updating intermediate params file
+Epoch 20 of 500 took 109.525s
+  training loss:		0.065766
+  validation loss:		0.054494
+  validation accuracy:		98.39 %
+Updating intermediate params file
+Epoch 21 of 500 took 112.020s
+  training loss:		0.064251
+  validation loss:		0.055244
+  validation accuracy:		98.31 %
+Updating intermediate params file
+Epoch 22 of 500 took 124.427s
+  training loss:		0.063230
+  validation loss:		0.053645
+  validation accuracy:		98.37 %
+Updating intermediate params file
+Epoch 23 of 500 took 114.671s
+  training loss:		0.061409
+  validation loss:		0.053822
+  validation accuracy:		98.36 %
+Updating intermediate params file
+Epoch 24 of 500 took 117.434s
+  training loss:		0.058726
+  validation loss:		0.051341
+  validation accuracy:		98.40 %
+Updating intermediate params file
+Epoch 25 of 500 took 117.986s
+  training loss:		0.058960
+  validation loss:		0.052004
+  validation accuracy:		98.48 %
+Updating intermediate params file
+Epoch 26 of 500 took 105.317s
+  training loss:		0.056907
+  validation loss:		0.050966
+  validation accuracy:		98.45 %
+Updating intermediate params file
+Epoch 27 of 500 took 107.570s
+  training loss:		0.055531
+  validation loss:		0.050733
+  validation accuracy:		98.42 %
+Updating intermediate params file
+Epoch 28 of 500 took 103.827s
+  training loss:		0.055050
+  validation loss:		0.049400
+  validation accuracy:		98.49 %
+Updating intermediate params file
+Epoch 29 of 500 took 103.588s
+  training loss:		0.054039
+  validation loss:		0.049219
+  validation accuracy:		98.48 %
+Updating intermediate params file
+Epoch 30 of 500 took 106.258s
+  training loss:		0.053345
+  validation loss:		0.049867
+  validation accuracy:		98.44 %
+Updating intermediate params file
+Epoch 31 of 500 took 106.452s
+  training loss:		0.051956
+  validation loss:		0.048836
+  validation accuracy:		98.54 %
+Updating intermediate params file
+Epoch 32 of 500 took 109.426s
+  training loss:		0.052412
+  validation loss:		0.047398
+  validation accuracy:		98.55 %
+Updating intermediate params file
+Epoch 33 of 500 took 107.233s
+  training loss:		0.050924
+  validation loss:		0.045999
+  validation accuracy:		98.56 %
+Updating intermediate params file
+Epoch 34 of 500 took 108.441s
+  training loss:		0.049421
+  validation loss:		0.046818
+  validation accuracy:		98.54 %
+Updating intermediate params file
+Epoch 35 of 500 took 109.390s
+  training loss:		0.049136
+  validation loss:		0.045298
+  validation accuracy:		98.58 %
+Updating intermediate params file
+Epoch 36 of 500 took 107.051s
+  training loss:		0.048489
+  validation loss:		0.045323
+  validation accuracy:		98.59 %
+Updating intermediate params file
+Epoch 37 of 500 took 113.713s
+  training loss:		0.047231
+  validation loss:		0.045699
+  validation accuracy:		98.64 %
+Updating intermediate params file
+Epoch 38 of 500 took 116.196s
+  training loss:		0.047490
+  validation loss:		0.045078
+  validation accuracy:		98.61 %
+Updating intermediate params file
+Epoch 39 of 500 took 111.653s
+  training loss:		0.045663
+  validation loss:		0.044539
+  validation accuracy:		98.55 %
+Updating intermediate params file
+Epoch 40 of 500 took 112.595s
+  training loss:		0.045469
+  validation loss:		0.044460
+  validation accuracy:		98.61 %
+Updating intermediate params file
+Epoch 41 of 500 took 115.255s
+  training loss:		0.044653
+  validation loss:		0.043823
+  validation accuracy:		98.67 %
+Updating intermediate params file
+Epoch 42 of 500 took 113.115s
+  training loss:		0.044079
+  validation loss:		0.043762
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 43 of 500 took 109.702s
+  training loss:		0.044110
+  validation loss:		0.043837
+  validation accuracy:		98.64 %
+Updating intermediate params file
+Epoch 44 of 500 took 114.433s
+  training loss:		0.043526
+  validation loss:		0.044527
+  validation accuracy:		98.64 %
+Updating intermediate params file
+Epoch 45 of 500 took 113.087s
+  training loss:		0.041402
+  validation loss:		0.043827
+  validation accuracy:		98.69 %
+Updating intermediate params file
+Epoch 46 of 500 took 110.511s
+  training loss:		0.042180
+  validation loss:		0.043431
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 47 of 500 took 109.414s
+  training loss:		0.043049
+  validation loss:		0.043782
+  validation accuracy:		98.63 %
+Updating intermediate params file
+Epoch 48 of 500 took 111.244s
+  training loss:		0.040801
+  validation loss:		0.042426
+  validation accuracy:		98.64 %
+Updating intermediate params file
+Epoch 49 of 500 took 113.452s
+  training loss:		0.040338
+  validation loss:		0.043284
+  validation accuracy:		98.67 %
+Updating intermediate params file
+Epoch 50 of 500 took 105.108s
+  training loss:		0.038969
+  validation loss:		0.042526
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 51 of 500 took 116.871s
+  training loss:		0.038677
+  validation loss:		0.042385
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 52 of 500 took 105.892s
+  training loss:		0.038142
+  validation loss:		0.043458
+  validation accuracy:		98.65 %
+Updating intermediate params file
+Epoch 53 of 500 took 115.620s
+  training loss:		0.037889
+  validation loss:		0.042111
+  validation accuracy:		98.60 %
+Updating intermediate params file
+Epoch 54 of 500 took 105.448s
+  training loss:		0.037767
+  validation loss:		0.042843
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 55 of 500 took 110.386s
+  training loss:		0.036985
+  validation loss:		0.042711
+  validation accuracy:		98.66 %
+Updating intermediate params file
+Epoch 56 of 500 took 106.175s
+  training loss:		0.037303
+  validation loss:		0.043220
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 57 of 500 took 108.439s
+  training loss:		0.036558
+  validation loss:		0.043157
+  validation accuracy:		98.69 %
+Updating intermediate params file
+Epoch 58 of 500 took 115.768s
+  training loss:		0.036591
+  validation loss:		0.042874
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 59 of 500 took 107.731s
+  training loss:		0.035892
+  validation loss:		0.042563
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 60 of 500 took 110.527s
+  training loss:		0.034955
+  validation loss:		0.042684
+  validation accuracy:		98.67 %
+Updating intermediate params file
+Epoch 61 of 500 took 110.073s
+  training loss:		0.035737
+  validation loss:		0.042749
+  validation accuracy:		98.63 %
+Updating intermediate params file
+Epoch 62 of 500 took 114.906s
+  training loss:		0.035688
+  validation loss:		0.041862
+  validation accuracy:		98.67 %
+Updating intermediate params file
+Epoch 63 of 500 took 106.826s
+  training loss:		0.034703
+  validation loss:		0.041139
+  validation accuracy:		98.66 %
+Updating intermediate params file
+Epoch 64 of 500 took 114.941s
+  training loss:		0.033711
+  validation loss:		0.041761
+  validation accuracy:		98.67 %
+Updating intermediate params file
+Epoch 65 of 500 took 113.388s
+  training loss:		0.033892
+  validation loss:		0.040975
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 66 of 500 took 117.829s
+  training loss:		0.032947
+  validation loss:		0.041163
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 67 of 500 took 116.135s
+  training loss:		0.032680
+  validation loss:		0.042318
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 68 of 500 took 108.568s
+  training loss:		0.033065
+  validation loss:		0.041438
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 69 of 500 took 111.076s
+  training loss:		0.032760
+  validation loss:		0.041823
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 70 of 500 took 119.482s
+  training loss:		0.032544
+  validation loss:		0.040893
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 71 of 500 took 118.005s
+  training loss:		0.033256
+  validation loss:		0.041728
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 72 of 500 took 111.660s
+  training loss:		0.031481
+  validation loss:		0.042451
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 73 of 500 took 104.049s
+  training loss:		0.032259
+  validation loss:		0.041319
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 74 of 500 took 103.933s
+  training loss:		0.032000
+  validation loss:		0.041040
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 75 of 500 took 103.800s
+  training loss:		0.031562
+  validation loss:		0.041022
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 76 of 500 took 103.759s
+  training loss:		0.031214
+  validation loss:		0.040863
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 77 of 500 took 103.650s
+  training loss:		0.031288
+  validation loss:		0.041981
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 78 of 500 took 104.058s
+  training loss:		0.029525
+  validation loss:		0.041090
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 79 of 500 took 104.767s
+  training loss:		0.029671
+  validation loss:		0.040287
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 80 of 500 took 104.238s
+  training loss:		0.029286
+  validation loss:		0.040098
+  validation accuracy:		98.82 %
+Updating intermediate params file
+Epoch 81 of 500 took 105.523s
+  training loss:		0.028489
+  validation loss:		0.041276
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 82 of 500 took 103.559s
+  training loss:		0.029854
+  validation loss:		0.041051
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 83 of 500 took 103.866s
+  training loss:		0.029719
+  validation loss:		0.041011
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 84 of 500 took 103.755s
+  training loss:		0.028579
+  validation loss:		0.041565
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 85 of 500 took 103.825s
+  training loss:		0.028319
+  validation loss:		0.041042
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 86 of 500 took 104.153s
+  training loss:		0.028823
+  validation loss:		0.041391
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 87 of 500 took 104.242s
+  training loss:		0.028524
+  validation loss:		0.040344
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 88 of 500 took 104.137s
+  training loss:		0.027672
+  validation loss:		0.041177
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 89 of 500 took 104.193s
+  training loss:		0.027421
+  validation loss:		0.040373
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 90 of 500 took 2210.272s
+  training loss:		0.026868
+  validation loss:		0.040924
+  validation accuracy:		98.82 %
+Updating intermediate params file
+Epoch 91 of 500 took 127.093s
+  training loss:		0.026901
+  validation loss:		0.040280
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 92 of 500 took 114.540s
+  training loss:		0.027470
+  validation loss:		0.040013
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 93 of 500 took 116.054s
+  training loss:		0.026802
+  validation loss:		0.040705
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 94 of 500 took 106.635s
+  training loss:		0.027003
+  validation loss:		0.040928
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 95 of 500 took 106.725s
+  training loss:		0.026277
+  validation loss:		0.040896
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 96 of 500 took 103.744s
+  training loss:		0.026497
+  validation loss:		0.041232
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 97 of 500 took 102.805s
+  training loss:		0.026205
+  validation loss:		0.041199
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 98 of 500 took 102.931s
+  training loss:		0.025959
+  validation loss:		0.041607
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 99 of 500 took 102.969s
+  training loss:		0.025442
+  validation loss:		0.041469
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 100 of 500 took 102.877s
+  training loss:		0.025034
+  validation loss:		0.040696
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 101 of 500 took 102.552s
+  training loss:		0.025179
+  validation loss:		0.040877
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 102 of 500 took 102.580s
+  training loss:		0.025268
+  validation loss:		0.040364
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 103 of 500 took 102.832s
+  training loss:		0.024601
+  validation loss:		0.040238
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 104 of 500 took 102.563s
+  training loss:		0.024953
+  validation loss:		0.041306
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 105 of 500 took 102.947s
+  training loss:		0.024718
+  validation loss:		0.039994
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 106 of 500 took 103.054s
+  training loss:		0.024148
+  validation loss:		0.041721
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 107 of 500 took 103.009s
+  training loss:		0.023476
+  validation loss:		0.040501
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 108 of 500 took 102.686s
+  training loss:		0.023486
+  validation loss:		0.040603
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 109 of 500 took 102.564s
+  training loss:		0.024037
+  validation loss:		0.040017
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 110 of 500 took 103.021s
+  training loss:		0.024058
+  validation loss:		0.040525
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 111 of 500 took 102.534s
+  training loss:		0.023378
+  validation loss:		0.040892
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 112 of 500 took 102.903s
+  training loss:		0.023796
+  validation loss:		0.041113
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 113 of 500 took 102.674s
+  training loss:		0.023507
+  validation loss:		0.041957
+  validation accuracy:		98.66 %
+Updating intermediate params file
+Epoch 114 of 500 took 102.879s
+  training loss:		0.022989
+  validation loss:		0.041082
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 115 of 500 took 102.582s
+  training loss:		0.022825
+  validation loss:		0.040706
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 116 of 500 took 102.722s
+  training loss:		0.023282
+  validation loss:		0.040358
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 117 of 500 took 102.640s
+  training loss:		0.022995
+  validation loss:		0.040872
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 118 of 500 took 102.584s
+  training loss:		0.022188
+  validation loss:		0.042107
+  validation accuracy:		98.67 %
+Updating intermediate params file
+Epoch 119 of 500 took 102.923s
+  training loss:		0.022809
+  validation loss:		0.041433
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 120 of 500 took 102.850s
+  training loss:		0.021813
+  validation loss:		0.041634
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 121 of 500 took 102.925s
+  training loss:		0.022935
+  validation loss:		0.041337
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 122 of 500 took 102.755s
+  training loss:		0.022429
+  validation loss:		0.041146
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 123 of 500 took 102.742s
+  training loss:		0.022669
+  validation loss:		0.042003
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 124 of 500 took 103.163s
+  training loss:		0.022278
+  validation loss:		0.041133
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 125 of 500 took 103.163s
+  training loss:		0.021660
+  validation loss:		0.041352
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 126 of 500 took 103.076s
+  training loss:		0.021319
+  validation loss:		0.040559
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 127 of 500 took 102.811s
+  training loss:		0.021517
+  validation loss:		0.040835
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 128 of 500 took 103.011s
+  training loss:		0.020949
+  validation loss:		0.040908
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 129 of 500 took 102.735s
+  training loss:		0.021648
+  validation loss:		0.040819
+  validation accuracy:		98.83 %
+Updating intermediate params file
+Epoch 130 of 500 took 102.755s
+  training loss:		0.021484
+  validation loss:		0.041676
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 131 of 500 took 102.555s
+  training loss:		0.020757
+  validation loss:		0.041387
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 132 of 500 took 102.819s
+  training loss:		0.021002
+  validation loss:		0.041361
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 133 of 500 took 102.915s
+  training loss:		0.020977
+  validation loss:		0.041051
+  validation accuracy:		98.82 %
+Updating intermediate params file
+Epoch 134 of 500 took 103.001s
+  training loss:		0.021204
+  validation loss:		0.040699
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 135 of 500 took 102.833s
+  training loss:		0.020768
+  validation loss:		0.040782
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 136 of 500 took 102.707s
+  training loss:		0.020847
+  validation loss:		0.039868
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 137 of 500 took 102.589s
+  training loss:		0.020982
+  validation loss:		0.040826
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 138 of 500 took 102.833s
+  training loss:		0.020362
+  validation loss:		0.041766
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 139 of 500 took 102.681s
+  training loss:		0.020242
+  validation loss:		0.042310
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 140 of 500 took 103.013s
+  training loss:		0.020220
+  validation loss:		0.041342
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 141 of 500 took 102.729s
+  training loss:		0.019915
+  validation loss:		0.041910
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 142 of 500 took 102.911s
+  training loss:		0.019459
+  validation loss:		0.041312
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 143 of 500 took 102.807s
+  training loss:		0.019045
+  validation loss:		0.040525
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 144 of 500 took 102.563s
+  training loss:		0.020354
+  validation loss:		0.041327
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 145 of 500 took 102.544s
+  training loss:		0.020107
+  validation loss:		0.040826
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 146 of 500 took 102.719s
+  training loss:		0.019907
+  validation loss:		0.040446
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 147 of 500 took 102.838s
+  training loss:		0.019205
+  validation loss:		0.041147
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 148 of 500 took 102.981s
+  training loss:		0.018931
+  validation loss:		0.041160
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 149 of 500 took 102.657s
+  training loss:		0.018712
+  validation loss:		0.041184
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 150 of 500 took 102.954s
+  training loss:		0.018356
+  validation loss:		0.041391
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 151 of 500 took 102.666s
+  training loss:		0.018803
+  validation loss:		0.041626
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 152 of 500 took 103.051s
+  training loss:		0.018697
+  validation loss:		0.042343
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 153 of 500 took 102.633s
+  training loss:		0.019373
+  validation loss:		0.041854
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 154 of 500 took 102.951s
+  training loss:		0.019052
+  validation loss:		0.042067
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 155 of 500 took 102.693s
+  training loss:		0.017924
+  validation loss:		0.041981
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 156 of 500 took 104.117s
+  training loss:		0.017408
+  validation loss:		0.042287
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 157 of 500 took 102.976s
+  training loss:		0.018393
+  validation loss:		0.042343
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 158 of 500 took 103.184s
+  training loss:		0.018655
+  validation loss:		0.042213
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 159 of 500 took 102.724s
+  training loss:		0.018530
+  validation loss:		0.041182
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 160 of 500 took 102.931s
+  training loss:		0.018278
+  validation loss:		0.040840
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 161 of 500 took 103.016s
+  training loss:		0.017450
+  validation loss:		0.041745
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 162 of 500 took 102.919s
+  training loss:		0.017721
+  validation loss:		0.041055
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 163 of 500 took 102.574s
+  training loss:		0.018000
+  validation loss:		0.042524
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 164 of 500 took 103.040s
+  training loss:		0.016927
+  validation loss:		0.042490
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 165 of 500 took 102.674s
+  training loss:		0.017410
+  validation loss:		0.040808
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 166 of 500 took 102.794s
+  training loss:		0.017970
+  validation loss:		0.040997
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 167 of 500 took 102.588s
+  training loss:		0.017838
+  validation loss:		0.040856
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 168 of 500 took 102.917s
+  training loss:		0.017268
+  validation loss:		0.041593
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 169 of 500 took 102.630s
+  training loss:		0.016833
+  validation loss:		0.041517
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 170 of 500 took 102.681s
+  training loss:		0.017325
+  validation loss:		0.041299
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 171 of 500 took 102.894s
+  training loss:		0.016389
+  validation loss:		0.041041
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 172 of 500 took 102.916s
+  training loss:		0.017572
+  validation loss:		0.040171
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 173 of 500 took 102.659s
+  training loss:		0.017330
+  validation loss:		0.040891
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 174 of 500 took 102.680s
+  training loss:		0.016650
+  validation loss:		0.042096
+  validation accuracy:		98.66 %
+Updating intermediate params file
+Epoch 175 of 500 took 102.923s
+  training loss:		0.016328
+  validation loss:		0.041800
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 176 of 500 took 103.084s
+  training loss:		0.016471
+  validation loss:		0.042141
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 177 of 500 took 102.867s
+  training loss:		0.017044
+  validation loss:		0.042404
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 178 of 500 took 103.085s
+  training loss:		0.015923
+  validation loss:		0.041744
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 179 of 500 took 102.727s
+  training loss:		0.017135
+  validation loss:		0.040442
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 180 of 500 took 103.005s
+  training loss:		0.015777
+  validation loss:		0.042061
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 181 of 500 took 102.714s
+  training loss:		0.016425
+  validation loss:		0.041489
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 182 of 500 took 102.970s
+  training loss:		0.016238
+  validation loss:		0.042178
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 183 of 500 took 102.653s
+  training loss:		0.016440
+  validation loss:		0.041164
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 184 of 500 took 102.872s
+  training loss:		0.016249
+  validation loss:		0.042723
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 185 of 500 took 103.025s
+  training loss:		0.016141
+  validation loss:		0.041383
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 186 of 500 took 102.728s
+  training loss:		0.016295
+  validation loss:		0.042433
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 187 of 500 took 102.683s
+  training loss:		0.015927
+  validation loss:		0.042576
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 188 of 500 took 102.704s
+  training loss:		0.015247
+  validation loss:		0.042472
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 189 of 500 took 102.945s
+  training loss:		0.015060
+  validation loss:		0.042285
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 190 of 500 took 102.785s
+  training loss:		0.015248
+  validation loss:		0.043224
+  validation accuracy:		98.69 %
+Updating intermediate params file
+Epoch 191 of 500 took 102.922s
+  training loss:		0.015334
+  validation loss:		0.042895
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 192 of 500 took 102.986s
+  training loss:		0.015547
+  validation loss:		0.042689
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 193 of 500 took 102.632s
+  training loss:		0.015073
+  validation loss:		0.042091
+  validation accuracy:		98.69 %
+Updating intermediate params file
+Epoch 194 of 500 took 102.980s
+  training loss:		0.015411
+  validation loss:		0.041623
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 195 of 500 took 103.038s
+  training loss:		0.015577
+  validation loss:		0.043166
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 196 of 500 took 103.054s
+  training loss:		0.015031
+  validation loss:		0.042417
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 197 of 500 took 102.795s
+  training loss:		0.015495
+  validation loss:		0.041762
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 198 of 500 took 102.725s
+  training loss:		0.014633
+  validation loss:		0.042312
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 199 of 500 took 102.903s
+  training loss:		0.015440
+  validation loss:		0.042652
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 200 of 500 took 104.393s
+  training loss:		0.014269
+  validation loss:		0.043222
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 201 of 500 took 102.633s
+  training loss:		0.014692
+  validation loss:		0.041515
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 202 of 500 took 102.538s
+  training loss:		0.014752
+  validation loss:		0.042254
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 203 of 500 took 102.904s
+  training loss:		0.014687
+  validation loss:		0.042639
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 204 of 500 took 102.823s
+  training loss:		0.014635
+  validation loss:		0.043155
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 205 of 500 took 103.077s
+  training loss:		0.014902
+  validation loss:		0.041800
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 206 of 500 took 103.038s
+  training loss:		0.014528
+  validation loss:		0.043262
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 207 of 500 took 102.744s
+  training loss:		0.014578
+  validation loss:		0.041890
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 208 of 500 took 102.965s
+  training loss:		0.014507
+  validation loss:		0.042550
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 209 of 500 took 102.680s
+  training loss:		0.014573
+  validation loss:		0.042628
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 210 of 500 took 103.201s
+  training loss:		0.015407
+  validation loss:		0.043655
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 211 of 500 took 102.654s
+  training loss:		0.014925
+  validation loss:		0.043770
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 212 of 500 took 102.661s
+  training loss:		0.014510
+  validation loss:		0.043057
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 213 of 500 took 102.897s
+  training loss:		0.015209
+  validation loss:		0.043286
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 214 of 500 took 102.657s
+  training loss:		0.014206
+  validation loss:		0.043357
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 215 of 500 took 102.655s
+  training loss:		0.014070
+  validation loss:		0.042822
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 216 of 500 took 102.593s
+  training loss:		0.013703
+  validation loss:		0.042806
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 217 of 500 took 102.966s
+  training loss:		0.014214
+  validation loss:		0.042444
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 218 of 500 took 102.647s
+  training loss:		0.013837
+  validation loss:		0.042036
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 219 of 500 took 102.896s
+  training loss:		0.014431
+  validation loss:		0.042492
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 220 of 500 took 103.149s
+  training loss:		0.013528
+  validation loss:		0.042630
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 221 of 500 took 103.722s
+  training loss:		0.014214
+  validation loss:		0.043326
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 222 of 500 took 102.834s
+  training loss:		0.013557
+  validation loss:		0.042587
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 223 of 500 took 102.558s
+  training loss:		0.013967
+  validation loss:		0.044251
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 224 of 500 took 102.698s
+  training loss:		0.014401
+  validation loss:		0.042031
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 225 of 500 took 102.882s
+  training loss:		0.014222
+  validation loss:		0.042093
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 226 of 500 took 102.706s
+  training loss:		0.013714
+  validation loss:		0.042513
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 227 of 500 took 103.039s
+  training loss:		0.012743
+  validation loss:		0.043158
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 228 of 500 took 102.656s
+  training loss:		0.013593
+  validation loss:		0.042462
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 229 of 500 took 102.587s
+  training loss:		0.013679
+  validation loss:		0.042342
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 230 of 500 took 103.180s
+  training loss:		0.013567
+  validation loss:		0.042307
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 231 of 500 took 102.728s
+  training loss:		0.013751
+  validation loss:		0.042079
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 232 of 500 took 102.981s
+  training loss:		0.013292
+  validation loss:		0.042300
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 233 of 500 took 102.867s
+  training loss:		0.012980
+  validation loss:		0.042535
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 234 of 500 took 102.847s
+  training loss:		0.013271
+  validation loss:		0.042795
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 235 of 500 took 102.661s
+  training loss:		0.013786
+  validation loss:		0.042825
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 236 of 500 took 102.852s
+  training loss:		0.013680
+  validation loss:		0.042826
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 237 of 500 took 103.657s
+  training loss:		0.012646
+  validation loss:		0.043413
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 238 of 500 took 102.609s
+  training loss:		0.013401
+  validation loss:		0.044135
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 239 of 500 took 102.932s
+  training loss:		0.013301
+  validation loss:		0.043028
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 240 of 500 took 102.712s
+  training loss:		0.013755
+  validation loss:		0.043943
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 241 of 500 took 102.923s
+  training loss:		0.012566
+  validation loss:		0.043281
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 242 of 500 took 102.576s
+  training loss:		0.012192
+  validation loss:		0.043919
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 243 of 500 took 102.577s
+  training loss:		0.012527
+  validation loss:		0.042583
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 244 of 500 took 102.567s
+  training loss:		0.012708
+  validation loss:		0.043591
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 245 of 500 took 102.661s
+  training loss:		0.012591
+  validation loss:		0.043154
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 246 of 500 took 102.856s
+  training loss:		0.012451
+  validation loss:		0.044163
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 247 of 500 took 103.001s
+  training loss:		0.012335
+  validation loss:		0.043426
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 248 of 500 took 102.847s
+  training loss:		0.012471
+  validation loss:		0.043841
+  validation accuracy:		98.69 %
+Updating intermediate params file
+Epoch 249 of 500 took 102.544s
+  training loss:		0.012337
+  validation loss:		0.043022
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 250 of 500 took 102.975s
+  training loss:		0.012917
+  validation loss:		0.043787
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 251 of 500 took 102.455s
+  training loss:		0.012123
+  validation loss:		0.042842
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 252 of 500 took 102.769s
+  training loss:		0.012749
+  validation loss:		0.042292
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 253 of 500 took 102.910s
+  training loss:		0.012880
+  validation loss:		0.043306
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 254 of 500 took 102.618s
+  training loss:		0.012909
+  validation loss:		0.043770
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 255 of 500 took 102.816s
+  training loss:		0.012110
+  validation loss:		0.043182
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 256 of 500 took 102.650s
+  training loss:		0.012168
+  validation loss:		0.042921
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 257 of 500 took 102.562s
+  training loss:		0.012315
+  validation loss:		0.043340
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 258 of 500 took 102.570s
+  training loss:		0.011816
+  validation loss:		0.042709
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 259 of 500 took 102.871s
+  training loss:		0.012224
+  validation loss:		0.043250
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 260 of 500 took 103.099s
+  training loss:		0.012151
+  validation loss:		0.044338
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 261 of 500 took 103.004s
+  training loss:		0.012260
+  validation loss:		0.043524
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 262 of 500 took 102.896s
+  training loss:		0.011594
+  validation loss:		0.042731
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 263 of 500 took 103.187s
+  training loss:		0.011690
+  validation loss:		0.043714
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 264 of 500 took 102.896s
+  training loss:		0.011873
+  validation loss:		0.043545
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 265 of 500 took 102.882s
+  training loss:		0.012434
+  validation loss:		0.044794
+  validation accuracy:		98.65 %
+Updating intermediate params file
+Epoch 266 of 500 took 102.874s
+  training loss:		0.011707
+  validation loss:		0.042297
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 267 of 500 took 102.961s
+  training loss:		0.012476
+  validation loss:		0.043224
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 268 of 500 took 102.605s
+  training loss:		0.012162
+  validation loss:		0.043025
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 269 of 500 took 103.011s
+  training loss:		0.011946
+  validation loss:		0.043880
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 270 of 500 took 102.746s
+  training loss:		0.011368
+  validation loss:		0.043446
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 271 of 500 took 102.779s
+  training loss:		0.012002
+  validation loss:		0.042565
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 272 of 500 took 102.677s
+  training loss:		0.011661
+  validation loss:		0.043441
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 273 of 500 took 102.764s
+  training loss:		0.011474
+  validation loss:		0.043438
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 274 of 500 took 103.079s
+  training loss:		0.011306
+  validation loss:		0.042801
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 275 of 500 took 102.837s
+  training loss:		0.011705
+  validation loss:		0.044326
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 276 of 500 took 102.859s
+  training loss:		0.011920
+  validation loss:		0.043039
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 277 of 500 took 102.698s
+  training loss:		0.011547
+  validation loss:		0.042083
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 278 of 500 took 102.832s
+  training loss:		0.012548
+  validation loss:		0.044099
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 279 of 500 took 102.590s
+  training loss:		0.010713
+  validation loss:		0.043463
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 280 of 500 took 102.696s
+  training loss:		0.011630
+  validation loss:		0.043521
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 281 of 500 took 102.903s
+  training loss:		0.011303
+  validation loss:		0.043039
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 282 of 500 took 102.693s
+  training loss:		0.010917
+  validation loss:		0.044147
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 283 of 500 took 102.956s
+  training loss:		0.011412
+  validation loss:		0.043458
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 284 of 500 took 102.651s
+  training loss:		0.011340
+  validation loss:		0.043539
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 285 of 500 took 102.543s
+  training loss:		0.010791
+  validation loss:		0.043024
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 286 of 500 took 102.743s
+  training loss:		0.012001
+  validation loss:		0.043970
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 287 of 500 took 102.662s
+  training loss:		0.010853
+  validation loss:		0.043257
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 288 of 500 took 103.082s
+  training loss:		0.011474
+  validation loss:		0.043998
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 289 of 500 took 103.113s
+  training loss:		0.011437
+  validation loss:		0.042991
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 290 of 500 took 104.104s
+  training loss:		0.010961
+  validation loss:		0.043002
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 291 of 500 took 102.734s
+  training loss:		0.010968
+  validation loss:		0.043267
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 292 of 500 took 102.667s
+  training loss:		0.011133
+  validation loss:		0.044543
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 293 of 500 took 102.728s
+  training loss:		0.011325
+  validation loss:		0.043012
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 294 of 500 took 102.694s
+  training loss:		0.010900
+  validation loss:		0.043720
+  validation accuracy:		98.70 %
+Updating intermediate params file
+Epoch 295 of 500 took 102.961s
+  training loss:		0.010436
+  validation loss:		0.043774
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 296 of 500 took 102.930s
+  training loss:		0.011023
+  validation loss:		0.043175
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 297 of 500 took 103.011s
+  training loss:		0.010989
+  validation loss:		0.044277
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 298 of 500 took 102.641s
+  training loss:		0.010753
+  validation loss:		0.043677
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 299 of 500 took 102.744s
+  training loss:		0.011427
+  validation loss:		0.043510
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 300 of 500 took 102.891s
+  training loss:		0.010245
+  validation loss:		0.043940
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 301 of 500 took 102.800s
+  training loss:		0.010529
+  validation loss:		0.043814
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 302 of 500 took 102.972s
+  training loss:		0.010686
+  validation loss:		0.043089
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 303 of 500 took 102.890s
+  training loss:		0.010189
+  validation loss:		0.043558
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 304 of 500 took 102.975s
+  training loss:		0.010438
+  validation loss:		0.044306
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 305 of 500 took 104.103s
+  training loss:		0.010382
+  validation loss:		0.043952
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 306 of 500 took 102.591s
+  training loss:		0.010539
+  validation loss:		0.042862
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 307 of 500 took 102.962s
+  training loss:		0.010024
+  validation loss:		0.043724
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 308 of 500 took 102.851s
+  training loss:		0.010530
+  validation loss:		0.044121
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 309 of 500 took 102.974s
+  training loss:		0.010181
+  validation loss:		0.044216
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 310 of 500 took 102.682s
+  training loss:		0.010759
+  validation loss:		0.044775
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 311 of 500 took 103.066s
+  training loss:		0.010177
+  validation loss:		0.044061
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 312 of 500 took 102.691s
+  training loss:		0.010048
+  validation loss:		0.044240
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 313 of 500 took 102.628s
+  training loss:		0.009836
+  validation loss:		0.045121
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 314 of 500 took 102.756s
+  training loss:		0.010132
+  validation loss:		0.044604
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 315 of 500 took 102.611s
+  training loss:		0.010827
+  validation loss:		0.043900
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 316 of 500 took 102.948s
+  training loss:		0.009714
+  validation loss:		0.044001
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 317 of 500 took 103.038s
+  training loss:		0.010049
+  validation loss:		0.043183
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 318 of 500 took 102.963s
+  training loss:		0.009856
+  validation loss:		0.043603
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 319 of 500 took 102.636s
+  training loss:		0.010433
+  validation loss:		0.045008
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 320 of 500 took 102.639s
+  training loss:		0.010033
+  validation loss:		0.043935
+  validation accuracy:		98.82 %
+Updating intermediate params file
+Epoch 321 of 500 took 102.771s
+  training loss:		0.010740
+  validation loss:		0.044060
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 322 of 500 took 102.706s
+  training loss:		0.009758
+  validation loss:		0.043467
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 323 of 500 took 102.902s
+  training loss:		0.009677
+  validation loss:		0.044200
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 324 of 500 took 102.525s
+  training loss:		0.009543
+  validation loss:		0.044990
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 325 of 500 took 102.947s
+  training loss:		0.010388
+  validation loss:		0.044490
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 326 of 500 took 102.685s
+  training loss:		0.010082
+  validation loss:		0.043763
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 327 of 500 took 102.570s
+  training loss:		0.010271
+  validation loss:		0.044717
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 328 of 500 took 102.632s
+  training loss:		0.009974
+  validation loss:		0.044683
+  validation accuracy:		98.83 %
+Updating intermediate params file
+Epoch 329 of 500 took 102.552s
+  training loss:		0.010296
+  validation loss:		0.045139
+  validation accuracy:		98.69 %
+Updating intermediate params file
+Epoch 330 of 500 took 102.937s
+  training loss:		0.009463
+  validation loss:		0.044354
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 331 of 500 took 102.872s
+  training loss:		0.009504
+  validation loss:		0.044351
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 332 of 500 took 102.988s
+  training loss:		0.010063
+  validation loss:		0.044237
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 333 of 500 took 102.651s
+  training loss:		0.009612
+  validation loss:		0.045034
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 334 of 500 took 102.606s
+  training loss:		0.009585
+  validation loss:		0.044446
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 335 of 500 took 103.373s
+  training loss:		0.009610
+  validation loss:		0.045159
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 336 of 500 took 102.670s
+  training loss:		0.009478
+  validation loss:		0.044611
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 337 of 500 took 102.938s
+  training loss:		0.009710
+  validation loss:		0.044098
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 338 of 500 took 102.594s
+  training loss:		0.009781
+  validation loss:		0.043734
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 339 of 500 took 102.992s
+  training loss:		0.009631
+  validation loss:		0.043623
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 340 of 500 took 102.587s
+  training loss:		0.009199
+  validation loss:		0.044055
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 341 of 500 took 102.662s
+  training loss:		0.009943
+  validation loss:		0.044349
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 342 of 500 took 102.639s
+  training loss:		0.009297
+  validation loss:		0.044813
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 343 of 500 took 102.658s
+  training loss:		0.009002
+  validation loss:		0.044677
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 344 of 500 took 102.995s
+  training loss:		0.009043
+  validation loss:		0.043511
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 345 of 500 took 102.806s
+  training loss:		0.009215
+  validation loss:		0.044816
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 346 of 500 took 102.914s
+  training loss:		0.009187
+  validation loss:		0.043363
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 347 of 500 took 102.568s
+  training loss:		0.009555
+  validation loss:		0.043595
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 348 of 500 took 102.652s
+  training loss:		0.009299
+  validation loss:		0.044457
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 349 of 500 took 103.035s
+  training loss:		0.009985
+  validation loss:		0.044105
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 350 of 500 took 102.568s
+  training loss:		0.009649
+  validation loss:		0.044260
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 351 of 500 took 102.933s
+  training loss:		0.009450
+  validation loss:		0.043433
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 352 of 500 took 102.493s
+  training loss:		0.008830
+  validation loss:		0.043936
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 353 of 500 took 103.032s
+  training loss:		0.009031
+  validation loss:		0.044827
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 354 of 500 took 102.644s
+  training loss:		0.009114
+  validation loss:		0.044165
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 355 of 500 took 102.620s
+  training loss:		0.008670
+  validation loss:		0.043708
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 356 of 500 took 102.763s
+  training loss:		0.009613
+  validation loss:		0.044074
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 357 of 500 took 102.770s
+  training loss:		0.008924
+  validation loss:		0.043636
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 358 of 500 took 102.901s
+  training loss:		0.008904
+  validation loss:		0.044419
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 359 of 500 took 102.852s
+  training loss:		0.009041
+  validation loss:		0.043362
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 360 of 500 took 105.634s
+  training loss:		0.008585
+  validation loss:		0.043524
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 361 of 500 took 102.589s
+  training loss:		0.008994
+  validation loss:		0.045490
+  validation accuracy:		98.69 %
+Updating intermediate params file
+Epoch 362 of 500 took 102.631s
+  training loss:		0.009164
+  validation loss:		0.043709
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 363 of 500 took 102.879s
+  training loss:		0.009070
+  validation loss:		0.043495
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 364 of 500 took 102.690s
+  training loss:		0.008854
+  validation loss:		0.043599
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 365 of 500 took 107.943s
+  training loss:		0.008852
+  validation loss:		0.043744
+  validation accuracy:		98.82 %
+Updating intermediate params file
+Epoch 366 of 500 took 107.785s
+  training loss:		0.008982
+  validation loss:		0.044536
+  validation accuracy:		98.83 %
+Updating intermediate params file
+Epoch 367 of 500 took 104.157s
+  training loss:		0.008897
+  validation loss:		0.044468
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 368 of 500 took 103.172s
+  training loss:		0.008445
+  validation loss:		0.044830
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 369 of 500 took 102.650s
+  training loss:		0.009027
+  validation loss:		0.044528
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 370 of 500 took 102.934s
+  training loss:		0.008935
+  validation loss:		0.045092
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 371 of 500 took 102.666s
+  training loss:		0.008650
+  validation loss:		0.045273
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 372 of 500 took 103.152s
+  training loss:		0.008111
+  validation loss:		0.045394
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 373 of 500 took 102.982s
+  training loss:		0.009477
+  validation loss:		0.044388
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 374 of 500 took 102.925s
+  training loss:		0.008263
+  validation loss:		0.045101
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 375 of 500 took 102.721s
+  training loss:		0.009080
+  validation loss:		0.044407
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 376 of 500 took 102.704s
+  training loss:		0.008675
+  validation loss:		0.045368
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 377 of 500 took 102.870s
+  training loss:		0.008659
+  validation loss:		0.044908
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 378 of 500 took 102.753s
+  training loss:		0.009420
+  validation loss:		0.045113
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 379 of 500 took 103.178s
+  training loss:		0.009295
+  validation loss:		0.045179
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 380 of 500 took 102.695s
+  training loss:		0.009059
+  validation loss:		0.044419
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 381 of 500 took 102.889s
+  training loss:		0.009084
+  validation loss:		0.044458
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 382 of 500 took 102.658s
+  training loss:		0.008372
+  validation loss:		0.044892
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 383 of 500 took 102.641s
+  training loss:		0.009381
+  validation loss:		0.044973
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 384 of 500 took 102.635s
+  training loss:		0.008894
+  validation loss:		0.044517
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 385 of 500 took 102.863s
+  training loss:		0.008689
+  validation loss:		0.044620
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 386 of 500 took 103.079s
+  training loss:		0.008794
+  validation loss:		0.043751
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 387 of 500 took 102.893s
+  training loss:		0.008555
+  validation loss:		0.044477
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 388 of 500 took 102.622s
+  training loss:		0.008109
+  validation loss:		0.044173
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 389 of 500 took 103.394s
+  training loss:		0.008451
+  validation loss:		0.043708
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 390 of 500 took 102.667s
+  training loss:		0.008517
+  validation loss:		0.044556
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 391 of 500 took 102.931s
+  training loss:		0.008871
+  validation loss:		0.044840
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 392 of 500 took 102.710s
+  training loss:		0.008449
+  validation loss:		0.045399
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 393 of 500 took 102.889s
+  training loss:		0.008190
+  validation loss:		0.044241
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 394 of 500 took 102.663s
+  training loss:		0.008045
+  validation loss:		0.044536
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 395 of 500 took 102.528s
+  training loss:		0.008424
+  validation loss:		0.045202
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 396 of 500 took 102.964s
+  training loss:		0.008537
+  validation loss:		0.045167
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 397 of 500 took 102.747s
+  training loss:		0.008435
+  validation loss:		0.045442
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 398 of 500 took 102.683s
+  training loss:		0.008332
+  validation loss:		0.045662
+  validation accuracy:		98.68 %
+Updating intermediate params file
+Epoch 399 of 500 took 102.633s
+  training loss:		0.008871
+  validation loss:		0.044352
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 400 of 500 took 102.931s
+  training loss:		0.008628
+  validation loss:		0.045331
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 401 of 500 took 103.027s
+  training loss:		0.008608
+  validation loss:		0.044774
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 402 of 500 took 102.656s
+  training loss:		0.008072
+  validation loss:		0.045749
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 403 of 500 took 102.956s
+  training loss:		0.008206
+  validation loss:		0.045104
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 404 of 500 took 102.676s
+  training loss:		0.008602
+  validation loss:		0.045032
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 405 of 500 took 103.126s
+  training loss:		0.008479
+  validation loss:		0.044959
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 406 of 500 took 102.815s
+  training loss:		0.008099
+  validation loss:		0.046219
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 407 of 500 took 103.003s
+  training loss:		0.007796
+  validation loss:		0.045629
+  validation accuracy:		98.71 %
+Updating intermediate params file
+Epoch 408 of 500 took 102.628s
+  training loss:		0.008540
+  validation loss:		0.044847
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 409 of 500 took 102.590s
+  training loss:		0.008205
+  validation loss:		0.045730
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 410 of 500 took 103.998s
+  training loss:		0.008422
+  validation loss:		0.045776
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 411 of 500 took 102.671s
+  training loss:		0.008301
+  validation loss:		0.046308
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 412 of 500 took 102.653s
+  training loss:		0.008405
+  validation loss:		0.046553
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 413 of 500 took 102.594s
+  training loss:		0.007309
+  validation loss:		0.046387
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 414 of 500 took 103.075s
+  training loss:		0.007655
+  validation loss:		0.045920
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 415 of 500 took 102.854s
+  training loss:		0.008455
+  validation loss:		0.045826
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 416 of 500 took 102.663s
+  training loss:		0.007453
+  validation loss:		0.046187
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 417 of 500 took 102.958s
+  training loss:		0.008010
+  validation loss:		0.046344
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 418 of 500 took 102.680s
+  training loss:		0.008090
+  validation loss:		0.045534
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 419 of 500 took 102.937s
+  training loss:		0.007858
+  validation loss:		0.045570
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 420 of 500 took 102.850s
+  training loss:		0.007482
+  validation loss:		0.046158
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 421 of 500 took 103.009s
+  training loss:		0.007280
+  validation loss:		0.045520
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 422 of 500 took 102.643s
+  training loss:		0.007974
+  validation loss:		0.046010
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 423 of 500 took 102.681s
+  training loss:		0.007504
+  validation loss:		0.046620
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 424 of 500 took 102.871s
+  training loss:		0.007556
+  validation loss:		0.046240
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 425 of 500 took 104.008s
+  training loss:		0.007802
+  validation loss:		0.045603
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 426 of 500 took 102.614s
+  training loss:		0.007389
+  validation loss:		0.045509
+  validation accuracy:		98.83 %
+Updating intermediate params file
+Epoch 427 of 500 took 102.628s
+  training loss:		0.007656
+  validation loss:		0.045787
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 428 of 500 took 104.005s
+  training loss:		0.007777
+  validation loss:		0.045800
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 429 of 500 took 102.989s
+  training loss:		0.008206
+  validation loss:		0.045443
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 430 of 500 took 102.661s
+  training loss:		0.008097
+  validation loss:		0.045003
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 431 of 500 took 102.971s
+  training loss:		0.007465
+  validation loss:		0.045231
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 432 of 500 took 102.956s
+  training loss:		0.007759
+  validation loss:		0.044989
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 433 of 500 took 102.938s
+  training loss:		0.007570
+  validation loss:		0.044817
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 434 of 500 took 102.654s
+  training loss:		0.007467
+  validation loss:		0.045531
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 435 of 500 took 103.129s
+  training loss:		0.008141
+  validation loss:		0.045200
+  validation accuracy:		98.82 %
+Updating intermediate params file
+Epoch 436 of 500 took 102.712s
+  training loss:		0.007519
+  validation loss:		0.045282
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 437 of 500 took 102.705s
+  training loss:		0.007293
+  validation loss:		0.045298
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 438 of 500 took 102.907s
+  training loss:		0.007494
+  validation loss:		0.044770
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 439 of 500 took 102.886s
+  training loss:		0.007669
+  validation loss:		0.046185
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 440 of 500 took 104.077s
+  training loss:		0.007679
+  validation loss:		0.045731
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 441 of 500 took 102.808s
+  training loss:		0.007554
+  validation loss:		0.045213
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 442 of 500 took 102.961s
+  training loss:		0.007466
+  validation loss:		0.045752
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 443 of 500 took 102.597s
+  training loss:		0.007881
+  validation loss:		0.045628
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 444 of 500 took 102.896s
+  training loss:		0.007380
+  validation loss:		0.045989
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 445 of 500 took 102.937s
+  training loss:		0.007600
+  validation loss:		0.046070
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 446 of 500 took 102.661s
+  training loss:		0.007667
+  validation loss:		0.045759
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 447 of 500 took 111.201s
+  training loss:		0.007478
+  validation loss:		0.045802
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 448 of 500 took 1958.455s
+  training loss:		0.007162
+  validation loss:		0.045394
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 449 of 500 took 116.920s
+  training loss:		0.007416
+  validation loss:		0.045750
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 450 of 500 took 134.809s
+  training loss:		0.007584
+  validation loss:		0.046000
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 451 of 500 took 109.245s
+  training loss:		0.007776
+  validation loss:		0.045527
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 452 of 500 took 114.670s
+  training loss:		0.007578
+  validation loss:		0.046034
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 453 of 500 took 108.436s
+  training loss:		0.007250
+  validation loss:		0.046124
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 454 of 500 took 105.384s
+  training loss:		0.008234
+  validation loss:		0.046639
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 455 of 500 took 105.302s
+  training loss:		0.007262
+  validation loss:		0.047414
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 456 of 500 took 106.330s
+  training loss:		0.007676
+  validation loss:		0.046388
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 457 of 500 took 104.901s
+  training loss:		0.007357
+  validation loss:		0.046938
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 458 of 500 took 109.699s
+  training loss:		0.007019
+  validation loss:		0.046545
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 459 of 500 took 110.563s
+  training loss:		0.007776
+  validation loss:		0.046453
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 460 of 500 took 107.606s
+  training loss:		0.007296
+  validation loss:		0.046231
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 461 of 500 took 110.843s
+  training loss:		0.007158
+  validation loss:		0.046750
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 462 of 500 took 112.844s
+  training loss:		0.007241
+  validation loss:		0.046484
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 463 of 500 took 106.271s
+  training loss:		0.007598
+  validation loss:		0.046935
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 464 of 500 took 104.742s
+  training loss:		0.007246
+  validation loss:		0.046393
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 465 of 500 took 104.109s
+  training loss:		0.007216
+  validation loss:		0.045684
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 466 of 500 took 105.476s
+  training loss:		0.006958
+  validation loss:		0.045708
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 467 of 500 took 105.256s
+  training loss:		0.007071
+  validation loss:		0.045744
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 468 of 500 took 104.661s
+  training loss:		0.006933
+  validation loss:		0.045882
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 469 of 500 took 107.513s
+  training loss:		0.007130
+  validation loss:		0.046247
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 470 of 500 took 110.379s
+  training loss:		0.006928
+  validation loss:		0.046349
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 471 of 500 took 105.512s
+  training loss:		0.007266
+  validation loss:		0.045984
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 472 of 500 took 105.292s
+  training loss:		0.006955
+  validation loss:		0.046319
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 473 of 500 took 105.398s
+  training loss:		0.007150
+  validation loss:		0.045396
+  validation accuracy:		98.84 %
+Updating intermediate params file
+Epoch 474 of 500 took 106.997s
+  training loss:		0.007200
+  validation loss:		0.045867
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 475 of 500 took 106.700s
+  training loss:		0.007120
+  validation loss:		0.045122
+  validation accuracy:		98.79 %
+Updating intermediate params file
+Epoch 476 of 500 took 105.174s
+  training loss:		0.006886
+  validation loss:		0.046018
+  validation accuracy:		98.82 %
+Updating intermediate params file
+Epoch 477 of 500 took 111.209s
+  training loss:		0.006981
+  validation loss:		0.046332
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 478 of 500 took 110.786s
+  training loss:		0.007038
+  validation loss:		0.046505
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Epoch 479 of 500 took 110.635s
+  training loss:		0.007134
+  validation loss:		0.046696
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 480 of 500 took 116.330s
+  training loss:		0.006839
+  validation loss:		0.046722
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 481 of 500 took 113.743s
+  training loss:		0.006831
+  validation loss:		0.047050
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 482 of 500 took 116.043s
+  training loss:		0.007447
+  validation loss:		0.045580
+  validation accuracy:		98.83 %
+Updating intermediate params file
+Epoch 483 of 500 took 108.908s
+  training loss:		0.006863
+  validation loss:		0.046508
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 484 of 500 took 107.622s
+  training loss:		0.006401
+  validation loss:		0.045712
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 485 of 500 took 116.883s
+  training loss:		0.007040
+  validation loss:		0.046146
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 486 of 500 took 111.959s
+  training loss:		0.006500
+  validation loss:		0.047694
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 487 of 500 took 108.023s
+  training loss:		0.006782
+  validation loss:		0.046996
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 488 of 500 took 108.605s
+  training loss:		0.006966
+  validation loss:		0.046550
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 489 of 500 took 109.336s
+  training loss:		0.006564
+  validation loss:		0.046424
+  validation accuracy:		98.77 %
+Updating intermediate params file
+Epoch 490 of 500 took 106.794s
+  training loss:		0.006467
+  validation loss:		0.046261
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 491 of 500 took 107.362s
+  training loss:		0.006555
+  validation loss:		0.046650
+  validation accuracy:		98.73 %
+Updating intermediate params file
+Epoch 492 of 500 took 107.342s
+  training loss:		0.006568
+  validation loss:		0.046895
+  validation accuracy:		98.72 %
+Updating intermediate params file
+Epoch 493 of 500 took 108.521s
+  training loss:		0.007252
+  validation loss:		0.046612
+  validation accuracy:		98.74 %
+Updating intermediate params file
+Epoch 494 of 500 took 111.041s
+  training loss:		0.006602
+  validation loss:		0.046390
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 495 of 500 took 583.409s
+  training loss:		0.006439
+  validation loss:		0.045922
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 496 of 500 took 113.307s
+  training loss:		0.006670
+  validation loss:		0.046069
+  validation accuracy:		98.78 %
+Updating intermediate params file
+Epoch 497 of 500 took 118.069s
+  training loss:		0.006789
+  validation loss:		0.046064
+  validation accuracy:		98.80 %
+Updating intermediate params file
+Epoch 498 of 500 took 120.773s
+  training loss:		0.006939
+  validation loss:		0.046084
+  validation accuracy:		98.76 %
+Updating intermediate params file
+Epoch 499 of 500 took 112.062s
+  training loss:		0.006459
+  validation loss:		0.046738
+  validation accuracy:		98.75 %
+Updating intermediate params file
+Epoch 500 of 500 took 107.311s
+  training loss:		0.007018
+  validation loss:		0.045974
+  validation accuracy:		98.81 %
+Updating intermediate params file
+Finished training. Saving results to file
+Traceback (most recent call last):
+  File "train_mnist.py", line 228, in <module>
+    train(epochs)
+  File "train_mnist.py", line 193, in train
+    os.path.remove(tmp_model_file)
+AttributeError: 'module' object has no attribute 'remove'

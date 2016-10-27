@@ -153,6 +153,10 @@ def train(epochs):
 
     errprint('Starting training')
 
+    # write intermediate param values to temporary file
+    tmp_model_file = model_file[:-4] + '.tmp.npz'
+    errprint("Writing intermediate params to: %s" % tmp_model_file)
+
     for epoch in xrange(epochs):
         train_err = 0
         train_batches = 0
@@ -177,9 +181,16 @@ def train(epochs):
         errprint("  validation accuracy:\t\t{:.2f} %".format(
             val_acc / val_batches * 100))
 
+        errprint("Updating intermediate params file")
+        if os.path.exists(tmp_model_file):
+            os.remove(tmp_model_file)
+        np.savez(tmp_model_file, *lasagne.layers.get_all_param_values(network))
+        
+
     errprint("Finished training. Saving results to file")
 
     np.savez(model_file, *lasagne.layers.get_all_param_values(network))
+    os.remove(tmp_model_file)
     return input_var, network
 
 
@@ -198,7 +209,7 @@ def load_predictor():
 
     def predictor(images):
         """
-Takes an np array of 28x28 normalized greyscale images (shape (100, 1, 28, 28) )
+Takes an np array of 28x28 normalized greyscale images (shape (1, 28, 28) )
 and returns the top prediction and the confidence of the prediction
         """
 
