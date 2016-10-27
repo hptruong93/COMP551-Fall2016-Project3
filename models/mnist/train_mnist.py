@@ -20,6 +20,10 @@ import theano.tensor as T
 
 import lasagne
 
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+model_file = os.path.join(dir_path, 'cnn_model.npz')
+
 def errprint(*args):
     sys.stderr.write('\n'.join(map(str,args)) + '\n')
 
@@ -27,16 +31,19 @@ def load_dataset():
     from urllib import urlretrieve
     import gzip
 
-    data_dir = 'data/'
+    data_dir = os.path.join(dir_path, 'data')
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
 
     def require_download(func):
         def wrapper(filename):
-            if not os.path.exists(data_dir + filename):
+            full_path = os.path.join(data_dir, filename)
+            if not os.path.exists(full_path):
                 source = 'http://yann.lecun.com/exdb/mnist/'
                 errprint("Downloading {0} to {1}".format(filename, data_dir))
-                urlretrieve(source + filename, data_dir + filename)
+                urlretrieve(source + filename, full_path)
 
-            return func(data_dir + filename)
+            return func(full_path)
         
         return wrapper
 
@@ -105,6 +112,9 @@ def batches(inputs, targets, batchsize):
         yield inputs[batch], targets[batch]
 
 def train(epochs):
+    if os.path.exists(model_file):
+        errprint("Model file exists. Please delete it and run again")
+        return
     errprint('Loading data')
     X_train, y_train, X_val, y_val = load_dataset()
 
@@ -167,10 +177,43 @@ def train(epochs):
         errprint("  validation accuracy:\t\t{:.2f} %".format(
             val_acc / val_batches * 100))
 
+    errprint("Finished training. Saving results to file")
+
+    np.savez(model_file, *lasagne.layers.get_all_param_values(network))
+    return input_var, network
+
+
+def load_predictor():
+    if os.path.exists(model_file):
+        input_var = T.tensor4('inputs')
+        network = build_cnn(input_var)
+        with np.load(model_file) as f:
+            param_values = [f['arr_%d' % i] for i in range(len(f.files))]
+        lasagne.layers.set_all_param_values(network, param_values)
+    else:
+        input_var, network = train(500) 
+    
+    prediction = lasagne.layers.get_output(network, deterministic=True)
+    predict_fcn = theano.function([input_var], prediction)
+
+    def predictor(images):
+        """
+Takes an np array of 28x28 normalized greyscale images (shape (100, 1, 28, 28) )
+and returns the top prediction and the confidence of the prediction
+        """
+
+        def get_result(confs):
+            argmax = np.argmax(confs)
+            return (argmax, confs[argmax])
+
+        results = map(get_result, predict_fcn(images))
+        return results
+
+    return predictor
+
 
 if __name__ == "__main__":
-    train(10)
-
-
+    epochs = 500 if len(sys.argv) < 2 else int(sys.argv[1])
+    train(epochs)
 
 
