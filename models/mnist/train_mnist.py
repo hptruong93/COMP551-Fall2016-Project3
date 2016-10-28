@@ -194,7 +194,7 @@ def train(epochs):
     return input_var, network
 
 
-def load_predictor():
+def load_predictor(argmax=False):
     if os.path.exists(model_file):
         input_var = T.tensor4('inputs')
         network = build_cnn(input_var)
@@ -213,11 +213,13 @@ Takes an np array of 28x28 normalized greyscale images (shape (1, 28, 28) )
 and returns the top prediction and the confidence of the prediction
         """
 
-        def get_result(confs):
+        def get_argmax(confs):
             argmax = np.argmax(confs)
             return (argmax, confs[argmax])
 
-        results = map(get_result, predict_fcn(images))
+        results = predict_fcn(images)
+        if argmax:
+            results = map(get_argmax, results)
         return results
 
     return predictor

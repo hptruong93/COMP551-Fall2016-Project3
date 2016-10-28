@@ -12,7 +12,8 @@ from skimage import filters
 import numpy as np
 import matplotlib.pyplot as plt
 
-from models.basic_cnn.cnn import train
+from models.basic_cnn.cnn import train as cnn_train
+from models.mnist_nn.mnist_nn import train as mnist_nn_train
 
 
 def view_image(image):
@@ -20,31 +21,50 @@ def view_image(image):
     plt.show()
 
 
-def load_dataset():
+def load_images():
     X = np.fromfile('data/train_X.bin', dtype='uint8')
     X = X.reshape(-1,1,60,60)
 
     # really simply background removal (for now)
     X = np.apply_along_axis(lambda im: (im > 250).astype(np.float32), 0, X)
+    return X
 
+def load_labels():
     with open('data/train_y.csv','r') as f:
         r = csv.reader(f)
         next(r,None)
         Y = np.array([int(val) for idx, val in r], dtype='uint8')
+    return Y
+
+def load_dataset():
+    X = load_images()
+    Y = load_labels()
 
     # put aside 10k for validation
     X_train, Y_train = X[:-10000], Y[:-10000]
     X_val, Y_val = X[-10000:], Y[-10000:]
 
     return X_train, Y_train, X_val, Y_val
-    
 
 
+def load_mnist_prediction_dataset():
+    print("Loading training subimage predictions")
+    X_train = np.loadtxt('data/mnist_stp4_predictions_train.txt')
+    X_train = X_train.reshape(-1, 1, 64, 10)
+
+    print("Loading validation subimage predictions")
+    X_val = np.loadtxt('data/mnist_stp4_predictions_val.txt')
+    X_val = X_val.reshape(-1, 1, 64, 10)
+
+    Y = load_labels()
+    Y_train, Y_val = Y[:-10000], Y[-10000:]
+
+    return X_train, Y_train, X_val, Y_val
 
 if __name__ == "__main__":
-    X_train, y_train, X_val, y_val = load_dataset()
+    X_train, y_train, X_val, y_val = load_mnist_prediction_dataset()
     
-    train(X_train, y_train, X_val, y_val, 2)
+    mnist_nn_train(X_train, y_train, X_val, y_val, 100)
 
 
 
