@@ -77,25 +77,21 @@ def build_nn(input_var, num_subimages):
             shape=(None, 1, num_subimages, 10),
             input_var=input_var)
 
-    # three dense layers of 800 with a dropout in the middle
+    # 20% dropout on input
+    network = lasagne.layers.dropout(network, p=0.2)
+
+    # two dense layers of 800 with a dropout in the middle
     network = lasagne.layers.DenseLayer(
             network, 
-            num_units=800,
+            num_units=700,
             nonlinearity=lasagne.nonlinearities.rectify,
             W=lasagne.init.GlorotUniform()) 
 
     network = lasagne.layers.DenseLayer(
-            lasagne.layers.dropout(network, p=0.5),
-            num_units=800,
+            network,
+            num_units=700,
             nonlinearity=lasagne.nonlinearities.rectify,
             W=lasagne.init.GlorotUniform()) 
-
-    network = lasagne.layers.DenseLayer(
-            network, 
-            num_units=800,
-            nonlinearity=lasagne.nonlinearities.rectify,
-            W=lasagne.init.GlorotUniform()) 
-
 
 
     # now add a output layer layer with dropout 

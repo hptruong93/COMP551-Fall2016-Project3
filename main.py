@@ -6,9 +6,6 @@ from __future__ import division
 
 import csv
 
-from skimage import filters
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -26,7 +23,7 @@ def load_images():
     X = X.reshape(-1,1,60,60)
 
     # really simply background removal (for now)
-    X = np.apply_along_axis(lambda im: (im > 250).astype(np.float32), 0, X)
+    X = np.apply_along_axis(lambda im: (im > 252).astype(np.float32), 0, X)
     return X
 
 def load_labels():
@@ -64,7 +61,7 @@ def load_mnist_prediction_dataset():
 if __name__ == "__main__":
     X_train, y_train, X_val, y_val = load_mnist_prediction_dataset()
     
-    mnist_nn_train(X_train, y_train, X_val, y_val, 100)
+    mnist_nn_train(X_train, y_train, X_val, y_val, 500)
 
 
 
