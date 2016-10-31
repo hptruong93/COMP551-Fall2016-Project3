@@ -9,7 +9,7 @@ def sigmoid_derivative(x):
 
 class ANN(object):
 
-    ALPHA = 0.05 # Learning rate
+    ALPHA = 0.5 # Learning rate
     BATCH_SIZE = 1
     BATCH_WEIGHT = 1.0 / BATCH_SIZE
 
@@ -44,11 +44,6 @@ class ANN(object):
         # 0th element is the input, last element is the output
         self.layer_outputs = [np.zeros(size) for size in self.layer_sizes]
 
-        # print "AAA ", map(lambda x : x.shape, self.w)
-        # print "AAA ", map(lambda x : x.shape, self.bias)
-        # print "BBB ", map(lambda x : x.shape, self.pre_activation_outputs)
-        # print "CCC ", map(lambda x : x.shape, self.layer_outputs)
-
     def forward_propagation(self, x):
         self.layer_outputs[0] = x
 
@@ -58,7 +53,7 @@ class ANN(object):
 
     def backward_propagation(self, y):
         # Assume square error loss function
-        print np.sum(np.square(y - self.layer_outputs[-1]))
+        # print np.sum(np.square(y - self.layer_outputs[-1]))
 
         delta_w = [np.zeros(w.shape) for w in self.w]
         delta_bias = [np.zeros(bias.shape) for bias in self.bias]
@@ -99,18 +94,23 @@ class ANN(object):
         for i, x in enumerate(X):
             if count == self.BATCH_SIZE:
                 count = 0
-                continue
+                for i in xrange(len(self.w)):
+                    self.w[i] -= delta_w[i]
+                    self.bias[i] -= delta_bias[i]
+
+                delta_w = [np.zeros(w.shape) for w in self.w]
+                delta_bias = [np.zeros(bias.shape) for bias in self.bias]
+
             count += 1
 
             self.forward_propagation(x)
             new_delta_w, new_delta_bias = self.backward_propagation(y[i])
 
-            delta_w += [self.BATCH_WEIGHT * dw for dw in new_delta_w]
-            delta_bias += [self.BATCH_WEIGHT * db for db in new_delta_bias]
-
-        for i in xrange(len(self.w)):
-            self.w[i] -= delta_w[i]
-            self.bias[i] -= delta_bias[i]
+            new_delta_w = [self.BATCH_WEIGHT * dw for dw in new_delta_w]
+            new_delta_bias = [self.BATCH_WEIGHT * db for db in new_delta_bias]
+            for i in xrange(self.number_layers):
+                delta_w[i] += new_delta_w[i]
+                delta_bias[i] += new_delta_bias[i]
 
     def predict_single(self, x, classify = False):
         self.forward_propagation(x)
@@ -119,19 +119,23 @@ class ANN(object):
     def predict(self, X):
         return [self.predict_single(x) for x in X]
 
+    def score(self, X, y):
+        # Assume sum square error loss
+        predicted = self.predict(X)
+        return np.sum(np.square(np.array([predicted[i] - true_val for i, true_val in enumerate(y)])))
+
 if __name__ == "__main__":
-    ann = ANN([2,3,4,2])
+    np.random.seed(0) # Remove in real run to remove predictability
+    ann = ANN([2,3,2])
 
     # for i in xrange(100):
     #     ann.forward_propagation(np.array([i / 100.0, 0.01 + i / 100.0]))
     #     ann.backward_propagation([i / 100.0, 0.01 + i / 100.0])
 
-    inputs = [np.array([i / 100.0, 1]) for i in xrange(100)]
+    inputs = [np.array([i / 10.0, 0.9 * i / 10.0]) for i in xrange(10)]
     outputs = inputs
 
-    ann.fit(inputs, outputs)
-    print outputs[-1]
-    print ann.predict([outputs[-1]])
-
-
+    for i in xrange(2000):
+        ann.fit(inputs, outputs)
+        print ann.score(inputs, outputs)
 
