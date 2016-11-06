@@ -1,18 +1,28 @@
 
+Default: 200 epochs, 0.1 alpha, kernel = [20, 50]
+#################################################################
+lab1-14: 200 epochs                                   37.715%
+lab2-22: 100 epochs                                   38.435%
+cs-10 : 500 epochs                                    37.715%
 
-lab1-14: 200 epochs
-lab2-22: 100 epochs 38.435% validation error
-cs-10 : 500 epochs
+lab2-30: 200 epochs 0.05 alpha                        37.475%
 
-lab2-30: 200 epochs 0.05 alpha
-
-cs-14 : 200 epochs rand_23545
-lab2-25: 200 epochs rand time_1
+cs-14 : 200 epochs rand_23545                         34.815%
+lab2-25: 200 epochs rand time_1                       36.29%
 
 
-lab2-18: 100 epochs 0.05 alpha rand_2354
-lab2-24: 200 epochs 0.01 alpha
-cs-7: 100 epochs 0.01 alpha 88.62% validation error
+lab2-18: 100 epochs 0.05 alpha rand_2354              43.04%
+lab2-24: 200 epochs 0.01 alpha                        87.75%
+cs-7: 100 epochs 0.01 alpha                           88.62%
 
-lab1-10 : 1000 epochs
+lab1-10 : 1000 epochs                                 34.05%
 
+
+#################################################################
+lab1-10 : 20000 epochs 0.05 alpha
+lab1-14 : 50000 epochs 0.05 alpha
+lab2-22 : 100000 epochs 0.05 alpha
+
+lab2-24 : 1000 epochs 0.05 alpha [40,90] kernel
+lab2-18 : 1000 epochs 0.05 alpha [30,70] kernel
+lab2-25 : 1000 epochs 0.05 alpha [10,30] kernel
