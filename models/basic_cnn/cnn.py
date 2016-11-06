@@ -105,8 +105,10 @@ def batches(inputs, targets, batchsize):
     assert len(inputs) == len(targets)
     indices = np.arange(len(inputs))
     np.random.shuffle(indices)
-    for idx in range(0, len(inputs) - batchsize + 1, batchsize):
+    total = len(inputs) // batchsize
+    for i, idx in enumerate(range(0, len(inputs) - batchsize + 1, batchsize)):
         batch = indices[idx:idx + batchsize]
+        sys.stderr.write("Batch {}/{}\n".format(str(i), str(total)))
         yield inputs[batch], targets[batch]
 
 def train(X_train, y_train, X_val, y_val, epochs):

@@ -27,7 +27,7 @@ from models.mnist.train_mnist import load_predictor
 mnist_predictor = load_predictor()
 
 #NOTE: This should be a power of two less than 32
-SUBIMAGE_STEP = 4
+SUBIMAGE_STEP = 8
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 model_file = os.path.join(dir_path, 'mnist_nn_model.npz')
@@ -80,19 +80,41 @@ def build_nn(input_var, num_subimages):
     # 20% dropout on input
     network = lasagne.layers.dropout(network, p=0.2)
 
-    # two dense layers of 800 with a dropout in the middle
+    # three dense layers of 800 with a dropout in the middle
+    # A quick note: I tried 2600 nodes per layer and got serious over training
+    #    Epoch 1 of 200 took 345.526s
+    #      training loss:                2.812733
+    #      validation loss:              2.822765
+    #      validation accuracy:          9.32 %
+    #    Epoch 2 of 200 took 333.694s
+    #      training loss:                2.753397
+    #      validation loss:              2.855645
+    #      validation accuracy:          8.11 %
+    #    Epoch 3 of 200 took 349.206s
+    #      training loss:                2.638942
+    #      validation loss:              3.036007
+    #      validation accuracy:          7.18 %
+    # The reasoning behind 2600 was > number of input 256*10. Clearly too many
+    #  trying 800 since that got up to 60% for stepsize of 4, so a good place to start
+    # also going to two layers since 3 overfit as well
+
     network = lasagne.layers.DenseLayer(
-            network, 
-            num_units=700,
+            network,
+            num_units=800,
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform()) 
+
+    network = lasagne.layers.DenseLayer(
+            lasagne.layers.dropout(network, p=0.5),
+            num_units=800,
             nonlinearity=lasagne.nonlinearities.rectify,
             W=lasagne.init.GlorotUniform()) 
 
     network = lasagne.layers.DenseLayer(
             network,
-            num_units=700,
+            num_units=800,
             nonlinearity=lasagne.nonlinearities.rectify,
             W=lasagne.init.GlorotUniform()) 
-
 
     # now add a output layer layer with dropout 
     network = lasagne.layers.DenseLayer(
