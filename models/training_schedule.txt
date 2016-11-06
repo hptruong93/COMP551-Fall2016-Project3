@@ -32,7 +32,7 @@ lab2-18 : 1000 epochs 0.05 alpha [30,70] kernel
 lab2-25 : 1000 epochs 0.05 alpha [10,30] kernel
 
 cs-7 : 200 epochs 0.05 alpha
-cs-10 : 100 epochs 0.05 alpha
+cs-10 : 100 epochs 0.05 alpha                          44.555%      160.52m
 lab2-33 : 500 epochs 0.05 alpha
 cs-4 : 200 epochs
 
