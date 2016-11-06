@@ -108,7 +108,7 @@ def batches(inputs, targets, batchsize):
     total = len(inputs) // batchsize
     for i, idx in enumerate(range(0, len(inputs) - batchsize + 1, batchsize)):
         batch = indices[idx:idx + batchsize]
-        sys.stderr.write("Batch {}/{}\n".format(str(i), str(total)))
+        # sys.stderr.write("Batch {}/{}\n".format(str(i), str(total)))
         yield inputs[batch], targets[batch]
 
 def train(X_train, y_train, X_val, y_val, epochs):
