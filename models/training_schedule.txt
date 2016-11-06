@@ -1,6 +1,8 @@
 
 Default: 200 epochs, 0.1 alpha, kernel = [20, 50]
 #################################################################
+1 hidden layer with 500 units
+#################################################################
 lab1-14: 200 epochs                                   37.715%
 lab2-22: 100 epochs                                   38.435%
 cs-10 : 500 epochs                                    37.715%
@@ -19,6 +21,8 @@ lab1-10 : 1000 epochs                                 34.05%
 
 
 #################################################################
+2 hidden layers with 800 units each
+#################################################################
 lab1-10 : 20000 epochs 0.05 alpha
 lab1-14 : 50000 epochs 0.05 alpha
 lab2-22 : 100000 epochs 0.05 alpha
@@ -26,3 +30,8 @@ lab2-22 : 100000 epochs 0.05 alpha
 lab2-24 : 1000 epochs 0.05 alpha [40,90] kernel
 lab2-18 : 1000 epochs 0.05 alpha [30,70] kernel
 lab2-25 : 1000 epochs 0.05 alpha [10,30] kernel
+
+cs-7 : 200 epochs 0.05 alpha
+cs-10 : 100 epochs 0.05 alpha
+lab2-33 : 500 epochs 0.05 alpha
+cs-4 : 200 epochs

@@ -208,12 +208,20 @@ def evaluate_lenet5(learning_rate=0.1, n_epochs=200,
         rng,
         input=layer2_input,
         n_in=nkerns[1] * 4 * 4,
-        n_out=500,
+        n_out=800,
+        activation=T.tanh
+    )
+
+    layer2_a = HiddenLayer(
+        rng,
+        input=layer2.output,
+        n_in=800,
+        n_out=800,
         activation=T.tanh
     )
 
     # classify the values of the fully-connected sigmoidal layer
-    layer3 = LogisticRegression(input=layer2.output, n_in=500, n_out=20)
+    layer3 = LogisticRegression(input=layer2_a.output, n_in=800, n_out=19)
 
     # the cost we minimize during training is the NLL of the model
     cost = layer3.negative_log_likelihood(y)
@@ -241,7 +249,7 @@ def evaluate_lenet5(learning_rate=0.1, n_epochs=200,
         [index],
         layer3.y_pred,
         givens={
-            x: valid_set_x[index * batch_size: (index + 1) * batch_size]
+            x: test_set_x[index * batch_size: (index + 1) * batch_size]
         }
     )
 
@@ -411,7 +419,7 @@ def load_all_data():
 def write_output(predictions):
     ids = list(xrange(20000))
 
-    with open('../data/predict_lenet_epoch_100_alpha_001.csv', 'w') as f:
+    with open('../data/predict_lenet_epoch_200.csv', 'w') as f:
         numpy.savetxt(f, numpy.c_[ids, predictions], header = 'Id,Prediction', delimiter = ',', fmt='%s', comments = '')
 
 ##################################################################################
@@ -430,7 +438,7 @@ if __name__ == '__main__':
 
     # dataset = '../data/mnist.pkl.gz'
     # datasets = load_data(dataset)
-    predictor = evaluate_lenet5(datasets = datasets, n_epochs = 100, learning_rate = 0.01)
+    predictor = evaluate_lenet5(datasets = datasets, n_epochs = 200, learning_rate = 0.1, nkerns=[20,50])
 
     print("Predicting output")
     predictions = []
