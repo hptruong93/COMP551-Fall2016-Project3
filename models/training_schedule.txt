@@ -35,3 +35,21 @@ cs-7 : 200 epochs 0.05 alpha
 cs-10 : 100 epochs 0.05 alpha
 lab2-33 : 500 epochs 0.05 alpha
 cs-4 : 200 epochs
+
+
+#################################################################
+Deep CNN
+    1 Conv2DLayer, 64 5x5 filters
+    4 Conv2DLayer, 64 3x3 filters
+    1 MaxPool2DLayer, pool size 2
+    2 Conv2DLayer, 96 3x3 filters
+    1 MaxPool2DLayer, pool size 2
+    1 DropoutLayer, 0.5 dropout
+    Dense output layer 
+#################################################################
+
+500 epochs, 0.001 learning rate, 0.9 Nesterov momentum
+
+
+
+

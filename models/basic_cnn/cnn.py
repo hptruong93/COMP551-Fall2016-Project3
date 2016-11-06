@@ -26,6 +26,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 model_file = os.path.join(dir_path, 'basic_cnn_model.npz')
 
 def errprint(*args):
+    print('\n'.join(map(str,args)))
     sys.stderr.write('\n'.join(map(str,args)) + '\n')
 
 def build_cnn(input_var):
@@ -33,19 +34,64 @@ def build_cnn(input_var):
             shape=(None, 1, 60, 60),
             input_var=input_var)
 
-    # convolutional layer
+    # 5 convolutional layers
     # using the settings given in the lasagne example
     network = lasagne.layers.Conv2DLayer(
             network,
-            num_filters=32,
-            filter_size=(10,10),
+            num_filters=64,
+            filter_size=(5,5),
             nonlinearity=lasagne.nonlinearities.rectify,
             W=lasagne.init.GlorotUniform())
 
+
+    network = lasagne.layers.Conv2DLayer(
+            network,
+            num_filters=64,
+            filter_size=(3,3),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+    network = lasagne.layers.Conv2DLayer(
+            network,
+            num_filters=64,
+            filter_size=(3,3),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+    network = lasagne.layers.Conv2DLayer(
+            network,
+            num_filters=64,
+            filter_size=(3,3),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+    network = lasagne.layers.Conv2DLayer(
+            network,
+            num_filters=64,
+            filter_size=(3,3),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+
+    # pooling layer
+    network = lasagne.layers.MaxPool2DLayer(network, pool_size=2)
+
+
+    # More convolutional layers
+    network = lasagne.layers.Conv2DLayer(
+            network,
+            num_filters=96,
+            filter_size=(3,3),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+    network = lasagne.layers.Conv2DLayer(
+            network,
+            num_filters=96,
+            filter_size=(3,3),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+
+    # pooling layer
+    network = lasagne.layers.MaxPool2DLayer(network, pool_size=2)
+
+
     # now add a dense layer with dropout 
-    #   NOTE: Maybe we don't want dropout (or less dropout), since the 
-    #         digits in our data are the same so we might want to overfit
-    #         a little bit...
     network = lasagne.layers.DenseLayer(
             lasagne.layers.dropout(network, p=0.5),
             num_units=19,
@@ -85,7 +131,7 @@ def train(X_train, y_train, X_val, y_val, epochs):
     updates = lasagne.updates.nesterov_momentum(
             loss,
             params,
-            learning_rate=0.01,
+            learning_rate=0.001,
             momentum=0.9)
 
 

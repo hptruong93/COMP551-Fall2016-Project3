@@ -10,8 +10,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from models.basic_cnn.cnn import train as cnn_train
-from models.mnist_nn.mnist_nn import train as mnist_nn_train
-from models.logistic_regression.logistic_regression import cross_validate
 
 def view_image(image):
     plt.imshow(image, cmap='Greys_r')
@@ -19,7 +17,7 @@ def view_image(image):
 
 
 def load_images():
-    X = np.fromfile('data/train_X.bin', dtype='uint8')
+    X = np.fromfile('data/train_x.bin', dtype='uint8')
     X = X.reshape(-1,1,60,60)
 
     # really simply background removal (for now)
@@ -61,11 +59,6 @@ def load_mnist_prediction_dataset():
 if __name__ == "__main__":
     X_train, y_train, X_val, y_val = load_dataset()
     
-    X = X_train.reshape(-1, 60, 60)
-    m = 'normalized'
-    for order in range(5,21,5):
-        print("With method {} and order {}".format(m, order))
-        cross_validate(X, y_train, m, order)
-
+    cnn_train(X_train, y_train, X_val, y_val, 500)
 
 
