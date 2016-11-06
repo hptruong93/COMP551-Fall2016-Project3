@@ -12,4 +12,4 @@ lab2-25: 200 epochs rand time_1
 
 lab2-18: 100 epochs 0.05 alpha rand_2354
 lab2-24: 200 epochs 0.01 alpha
-cs-7: 100 epochs 0.01 alpha
+cs-7: 100 epochs 0.01 alpha 88.62% validation error
