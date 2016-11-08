@@ -1,0 +1,18 @@
+Cross validation for order 5 and method central
+Accuracy with 3 folds: 0.07545
+Cross validation for order 5 and method normalized
+Accuracy with 3 folds: 0.09835
+Cross validation for order 5 and method hu
+Accuracy with 3 folds: 0.09875
+Cross validation for order 10 and method central
+Accuracy with 3 folds: 0.07485
+Cross validation for order 10 and method normalized
+Accuracy with 3 folds: 0.09865
+Cross validation for order 10 and method hu
+Accuracy with 3 folds: 0.0987
+Cross validation for order 15 and method central
+Accuracy with 3 folds: 0.0861
+Cross validation for order 15 and method normalized
+Accuracy with 3 folds: 0.09855
+Cross validation for order 15 and method hu
+Accuracy with 3 folds: 0.09875

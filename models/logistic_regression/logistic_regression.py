@@ -82,7 +82,7 @@ def cross_validate(X, y, method='central', order=5):
 
     p = Pool(4)
 
-    accs = sum(map(validate, folds)) / len(X)
+    accs = sum(p.map(validate, folds)) / len(X)
     print("Accuracy with {} folds: {}".format(fold_cnt, accs))
 
 

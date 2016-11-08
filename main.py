@@ -5,11 +5,13 @@ Team ATP
 from __future__ import division
 
 import csv
+import sys
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 from models.basic_cnn.cnn import train as cnn_train
+from models.logistic_regression.logistic_regression import *
 
 def view_image(image):
     plt.imshow(image, cmap='Greys_r')
@@ -58,7 +60,14 @@ def load_mnist_prediction_dataset():
 
 if __name__ == "__main__":
     X_train, y_train, X_val, y_val = load_dataset()
-    
-    cnn_train(X_train, y_train, X_val, y_val, 500)
+    X = np.append(X_train, X_val)
+    X = X.reshape(-1, 60, 60)
+    y = np.append(y_train, y_val)
+
+    for order in [5, 10, 15]:
+        for method in ['central', 'normalized', 'hu']:
+            print("Cross validation for order {} and method {}".format(order, method))
+            cross_validate(X[:20000], y[:20000], method=method, order=order)
+
 
 
