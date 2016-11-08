@@ -1,5 +1,8 @@
+import sys
 import numpy as np
-
+import csv
+import cv2
+import time
 
 def sigmoid(x):
     return 1.0 / (1.0 + np.exp(-x))
@@ -44,6 +47,9 @@ class ANN(object):
         # 0th element is the input, last element is the output
         self.layer_outputs = [np.zeros(size) for size in self.layer_sizes]
 
+    def __str__(self):
+        return "ANN of {0} layers with sizes {1}".format(self.number_layers, self.layer_sizes)
+
     def forward_propagation(self, x):
         self.layer_outputs[0] = x
 
@@ -58,6 +64,14 @@ class ANN(object):
         delta_w = [np.zeros(w.shape) for w in self.w]
         delta_bias = [np.zeros(bias.shape) for bias in self.bias]
 
+        # Encode y as 1 hot if possible
+        if type(y) is np.uint8:
+            one_index = y
+            y = np.zeros((19,), dtype = np.uint8)
+            y[one_index] = 1
+
+        assert y.shape == self.layer_outputs[-1].shape
+
         # First we need to calculate the derivative at the output layer
         error = -(y - self.layer_outputs[-1]) * self.activation_function_derivative(self.pre_activation_outputs[-1])
 
@@ -70,10 +84,6 @@ class ANN(object):
 
         for layer in xrange(self.number_layers - 2, 0, -1):
             error = self.w[layer + 1].T.dot(error) * self.activation_function_derivative(self.layer_outputs[layer].reshape(-1, 1))
-
-            # print self.w[layer].shape, error.shape, self.bias[layer].shape
-            # print "WHAT " , (self.ALPHA * error).shape
-            # print self.layer_outputs[layer-1].reshape(-1,1).shape
 
             assert error.flatten().shape == self.bias[layer].shape
             # self.bias[layer] -= self.ALPHA * error.flatten()
@@ -92,6 +102,9 @@ class ANN(object):
 
         count = 0
         for i, x in enumerate(X):
+            if i % 100 == 0:
+                print("Iteration %s" % i)
+
             if count == self.BATCH_SIZE:
                 count = 0
                 for i in xrange(len(self.w)):
@@ -116,26 +129,103 @@ class ANN(object):
         self.forward_propagation(x)
         return np.argmax([self.layer_outputs[-1]]) if classify else self.layer_outputs[-1]
 
-    def predict(self, X):
-        return [self.predict_single(x) for x in X]
+    def predict(self, X, classify = False):
+        return [self.predict_single(x, classify) for x in X]
 
     def score(self, X, y):
         # Assume sum square error loss
         predicted = self.predict(X)
         return np.sum(np.square(np.array([predicted[i] - true_val for i, true_val in enumerate(y)])))
 
+################################################################################################
+def preprocess(X):
+    # really simply background removal (for now)
+    X = np.apply_along_axis(lambda im: (im > 252).astype(np.float32), 0, X)
+
+    def crop(im):
+        return im[2:-2, 2:-2]
+
+    def resize(im):
+        return cv2.resize(im, (0,0), fx = 0.5, fy = 0.5)
+        # return im
+
+    X = np.array([resize(crop(im)) for im in X])
+    X = X.reshape((-1, (28*1) **2))
+
+    return X
+
+def load_images():
+    print("....Loading training and validation images")
+    X = np.fromfile('../../data/train_x.bin', dtype='uint8')
+    X = X.reshape((100000,60,60))
+
+    # X = X[:1000]
+
+    print("....Preprocess training images")
+    X = preprocess(X)
+    return X
+
+def load_labels():
+    print("....Loading labels")
+    with open('../../data/train_y.csv','r') as f:
+        r = csv.reader(f)
+        next(r,None)
+        Y = np.array([int(val) for idx, val in r], dtype='uint8')
+    return Y
+
+def load_test():
+    print("....Loading test images")
+    test = np.fromfile('../../data/test_x.bin', dtype='uint8')
+    test = test.reshape((20000,60,60))
+
+    print("....Preprocess test images")
+    test = preprocess(test)
+    return test
+
+def load_all_data():
+    images = load_images()
+    labels = load_labels()
+    tests = load_test()
+
+    total = len(images)
+    validation_size = int(total * 0.2)
+    print("Reserving {0} for validation set.".format(validation_size))
+
+    train_x, val_x = images[:-validation_size], images[-validation_size:]
+    train_y, val_y = labels[:-validation_size], labels[-validation_size:]
+    test_x = tests
+
+    return ((train_x, train_y), (val_x, val_y), (test_x))
+
+def write_output(predictions):
+    ids = list(xrange(20000))
+
+    with open('../data/predict_lenet_epoch_2000.csv', 'w') as f:
+        np.savetxt(f, np.c_[ids, predictions], header = 'Id,Prediction', delimiter = ',', fmt='%s', comments = '')
+
+################################################################################################
+
 if __name__ == "__main__":
-    np.random.seed(0) # Remove in real run to remove predictability
-    ann = ANN([2,3,2])
+    sizes = [int(arg) for arg in sys.argv[1:]]
+    sizes = [28*28] + sizes + [19]
 
-    # for i in xrange(100):
-    #     ann.forward_propagation(np.array([i / 100.0, 0.01 + i / 100.0]))
-    #     ann.backward_propagation([i / 100.0, 0.01 + i / 100.0])
+    np.random.seed(int(time.time()))
+    loaded_data = load_all_data()
 
-    inputs = [np.array([i / 10.0, 0.9 * i / 10.0]) for i in xrange(10)]
-    outputs = inputs
+    train, val, test = loaded_data
+    test = (test, np.array(tuple(np.random.randint(0, 20) for _ in xrange(20000))))
 
-    for i in xrange(2000):
-        ann.fit(inputs, outputs)
-        print ann.score(inputs, outputs)
+    ann = ANN(sizes)
+    print("Constructed ANN {0}".format(ann))
 
+    start_time = time.time()
+    ann.fit(train[0], train[1])
+    print("Training took {0}m".format((time.time() - start_time) / 60.0))
+
+    validation_predictions = ann.predict(val[0], classify = True)
+    accuracy = np.sum([1 if v == val[1][i] else 0 for i, v in enumerate(validation_predictions)]) / float(len(val[0]))
+    print("Validation Accuracy is {0}".format(accuracy))
+    print("Finished running for ANN {0}".format(ann))
+
+    # predictions = ann.predict(test[0], classify = True)
+    # print(predictions)

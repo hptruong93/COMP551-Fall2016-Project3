@@ -1,6 +1,17 @@
 
-Default: 200 epochs, 0.1 alpha, kernel = [20, 50]
 #################################################################
+Hand ann implementation
+#################################################################
+cs-10: [56*56,500,19]
+lab1-14: [56*56,800,19]
+lab2-25: [56*56,800,800,19]
+lab2-24: [56*56,1000,1000,19]
+lab2-12: [56*56,800,800,800,19]
+lab2-42: [28*28,800,800,800,19]
+
+
+#################################################################
+Default: 200 epochs, 0.1 alpha, kernel = [20, 50]
 1 hidden layer with 500 units
 #################################################################
 lab1-14: 200 epochs                                   37.715%
@@ -18,25 +29,18 @@ lab2-24: 200 epochs 0.01 alpha                        87.75%
 cs-7: 100 epochs 0.01 alpha                           88.62%
 
 lab1-10 : 1000 epochs                                 34.05%
+lab1-10 : 2000 epochs
 
 
 #################################################################
+Default: 200 epochs, 0.1 alpha, kernel = [20, 50]
 2 hidden layers with 800 units each
 #################################################################
-lab2-25 : 10000 epochs
-lab1-10 : 20000 epochs 0.05 alpha
-lab1-14 : 50000 epochs 0.05 alpha
-lab2-22 : 100000 epochs 0.05 alpha
-
-lab2-24 : 1000 epochs 0.05 alpha [40,90] kernel
-lab2-18 : 1000 epochs 0.05 alpha [30,70] kernel
 lab2-25 : 1000 epochs 0.05 alpha [10,30] kernel        41.355%      276.33m
 
 cs-7 : 200 epochs 0.05 alpha                           38.970%      320.56m
 cs-10 : 100 epochs 0.05 alpha                          44.555%      160.52m
-lab2-33 : 500 epochs 0.05 alpha
 cs-4 : 200 epochs                                      37.630%      254.33m
-cs-10 : 5000 epochs 0.05 alpha
 
 
 #################################################################
@@ -47,7 +51,7 @@ Deep CNN
     2 Conv2DLayer, 96 3x3 filters
     1 MaxPool2DLayer, pool size 2
     1 DropoutLayer, 0.5 dropout
-    Dense output layer 
+    Dense output layer
 #################################################################
 
 500 epochs, 0.001 learning rate, 0.9 Nesterov momentum
