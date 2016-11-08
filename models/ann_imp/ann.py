@@ -19,7 +19,7 @@ class ANN(object):
     """
         Raw implementation of artificial neural network.
     """
-    def __init__(self, layer_sizes, activation_function = sigmoid, activation_function_derivative = sigmoid_derivative):
+    def __init__(self, layer_sizes, epochs = 1, activation_function = sigmoid, activation_function_derivative = sigmoid_derivative):
         super(ANN, self).__init__()
 
         self.activation_function = activation_function
@@ -27,6 +27,8 @@ class ANN(object):
 
         self.number_layers = len(layer_sizes)
         self.layer_sizes = layer_sizes
+
+        self.epochs = epochs
 
         # Weight matrix is a 1-index matrix: from 1 to n layers (so 0th element not used)
         # These are the weights of the incoming connections TO this layer.
@@ -101,29 +103,33 @@ class ANN(object):
         delta_bias = [np.zeros(bias.shape) for bias in self.bias]
 
         count = 0
-        for i, x in enumerate(X):
-            if i % 100 == 0:
-                print("Iteration %s" % i)
 
-            if count == self.BATCH_SIZE:
-                count = 0
-                for i in xrange(len(self.w)):
-                    self.w[i] -= delta_w[i]
-                    self.bias[i] -= delta_bias[i]
+        for epoch in xrange(self.epochs):
+            print("Epoch {0}".format(epoch))
+            for i, x in enumerate(X):
+                if i % 1000 == 0:
+                    print("Iteration {0}".format(i))
 
-                delta_w = [np.zeros(w.shape) for w in self.w]
-                delta_bias = [np.zeros(bias.shape) for bias in self.bias]
+                if count == self.BATCH_SIZE:
+                    count = 0
+                    for i in xrange(len(self.w)):
+                        self.w[i] -= delta_w[i]
+                        self.bias[i] -= delta_bias[i]
 
-            count += 1
+                    delta_w = [np.zeros(w.shape) for w in self.w]
+                    delta_bias = [np.zeros(bias.shape) for bias in self.bias]
 
-            self.forward_propagation(x)
-            new_delta_w, new_delta_bias = self.backward_propagation(y[i])
+                count += 1
 
-            new_delta_w = [self.BATCH_WEIGHT * dw for dw in new_delta_w]
-            new_delta_bias = [self.BATCH_WEIGHT * db for db in new_delta_bias]
-            for i in xrange(self.number_layers):
-                delta_w[i] += new_delta_w[i]
-                delta_bias[i] += new_delta_bias[i]
+                self.forward_propagation(x)
+                new_delta_w, new_delta_bias = self.backward_propagation(y[i])
+
+                new_delta_w = [self.BATCH_WEIGHT * dw for dw in new_delta_w]
+                new_delta_bias = [self.BATCH_WEIGHT * db for db in new_delta_bias]
+                for i in xrange(self.number_layers):
+                    delta_w[i] += new_delta_w[i]
+                    delta_bias[i] += new_delta_bias[i]
+
 
     def predict_single(self, x, classify = False):
         self.forward_propagation(x)
@@ -146,11 +152,11 @@ def preprocess(X):
         return im[2:-2, 2:-2]
 
     def resize(im):
-        return cv2.resize(im, (0,0), fx = 0.5, fy = 0.5)
-        # return im
+        # return cv2.resize(im, (0,0), fx = 0.5, fy = 0.5)
+        return im
 
     X = np.array([resize(crop(im)) for im in X])
-    X = X.reshape((-1, (28*1) **2))
+    X = X.reshape((-1, (28*2) **2))
 
     return X
 
@@ -159,7 +165,7 @@ def load_images():
     X = np.fromfile('../../data/train_x.bin', dtype='uint8')
     X = X.reshape((100000,60,60))
 
-    # X = X[:1000]
+    # X = X[:500]
 
     print("....Preprocess training images")
     X = preprocess(X)
@@ -206,8 +212,9 @@ def write_output(predictions):
 ################################################################################################
 
 if __name__ == "__main__":
-    sizes = [int(arg) for arg in sys.argv[1:]]
-    sizes = [28*28] + sizes + [19]
+    epoch = int(sys.argv[1])
+    sizes = [int(arg) for arg in sys.argv[2:]]
+    sizes = [56*56] + sizes + [19]
 
     np.random.seed(int(time.time()))
     loaded_data = load_all_data()
@@ -215,7 +222,7 @@ if __name__ == "__main__":
     train, val, test = loaded_data
     test = (test, np.array(tuple(np.random.randint(0, 20) for _ in xrange(20000))))
 
-    ann = ANN(sizes)
+    ann = ANN(sizes, epochs = 2)
     print("Constructed ANN {0}".format(ann))
 
     start_time = time.time()
