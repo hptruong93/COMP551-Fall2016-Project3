@@ -44,49 +44,6 @@ def build_cnn(input_var):
             W=lasagne.init.GlorotUniform())
 
 
-    network = lasagne.layers.Conv2DLayer(
-            network,
-            num_filters=64,
-            filter_size=(3,3),
-            nonlinearity=lasagne.nonlinearities.rectify,
-            W=lasagne.init.GlorotUniform())
-    network = lasagne.layers.Conv2DLayer(
-            network,
-            num_filters=64,
-            filter_size=(3,3),
-            nonlinearity=lasagne.nonlinearities.rectify,
-            W=lasagne.init.GlorotUniform())
-    network = lasagne.layers.Conv2DLayer(
-            network,
-            num_filters=64,
-            filter_size=(3,3),
-            nonlinearity=lasagne.nonlinearities.rectify,
-            W=lasagne.init.GlorotUniform())
-    network = lasagne.layers.Conv2DLayer(
-            network,
-            num_filters=64,
-            filter_size=(3,3),
-            nonlinearity=lasagne.nonlinearities.rectify,
-            W=lasagne.init.GlorotUniform())
-
-    # pooling layer
-    network = lasagne.layers.MaxPool2DLayer(network, pool_size=2)
-
-
-    # More convolutional layers
-    network = lasagne.layers.Conv2DLayer(
-            network,
-            num_filters=96,
-            filter_size=(3,3),
-            nonlinearity=lasagne.nonlinearities.rectify,
-            W=lasagne.init.GlorotUniform())
-    network = lasagne.layers.Conv2DLayer(
-            network,
-            num_filters=96,
-            filter_size=(3,3),
-            nonlinearity=lasagne.nonlinearities.rectify,
-            W=lasagne.init.GlorotUniform())
-
     # pooling layer
     network = lasagne.layers.MaxPool2DLayer(network, pool_size=2)
 
@@ -133,7 +90,7 @@ def train(X_train, y_train, X_val, y_val, epochs):
     updates = lasagne.updates.nesterov_momentum(
             loss,
             params,
-            learning_rate=0.001,
+            learning_rate=0.01,
             momentum=0.9)
 
 
