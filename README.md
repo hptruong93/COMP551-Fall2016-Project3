@@ -2,6 +2,7 @@
 COMP551-Fall2016-Project3 Difficult digits
 
 [Kaggle](https://inclass.kaggle.com/c/difficult-digits-fall-2016/)
+
 [Report](https://www.sharelatex.com/project/581a00b68bc686ac2b6baaf2)
 
 ### Usage Notes
