@@ -6,17 +6,28 @@ COMP551-Fall2016-Project3 Difficult digits
 [Report](https://www.sharelatex.com/project/581a00b68bc686ac2b6baaf2)
 
 ### Usage Notes
-The data directory contains all the data files from the kaggle. They have been omitted from the git due to their size, 
+The data directory contains all the data files from the kaggle. They have been omitted from the git due to their size,
 but should be added back for our code to properly run
 
 #### Logistic Regression
 
 Run `python main.py lr` to begin a crossvalidation of hyperparamter settings.
 
+
+#### Feedforward network implementation
+
+From models/ann_imp run `python ann.py e l1 l2 l3 ln` where e is the number of epochs, l1, l2, ..., ln are the sizes of the hidden layers of the network.
+Sample code to produce prediction is also provided at the bottom of this file (the commented code)
+
 #### CNN
 
 Run `python main.py cnn` to begin training 100 epochs of our CNN. The number of epochs can be changed by editing `main.py`, line 65.
 Note that this prints to both stdout and stderr, so you can redirect the log to a file and you will still see output.
+
+#### Lenet
+
+From models run `python lenet.py`. This runs the current configuration of Lenet. To modify the configuration of the network inside the file, modify the parameters to the call
+to`evaluate_lenet5` method in `main`
 
 #### Making predictions for a CNN
 
