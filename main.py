@@ -61,16 +61,19 @@ def load_mnist_prediction_dataset():
 if __name__ == "__main__":
     X_train, y_train, X_val, y_val = load_dataset()
 
-    cnn_train(X_train, y_train, X_val, y_val, 100)
+    if len(sys.argv) > 1 and sys.argv[1] == 'cnn':
+        cnn_train(X_train, y_train, X_val, y_val, 100)
+    elif len(sys.argv) > 1 and sys.argv[1] == 'lr':
+        X = np.append(X_train, X_val)
+        X = X.reshape(-1, 60, 60)
+        y = np.append(y_train, y_val)
+    
+        for order in [5, 10, 15]:
+            for method in ['central', 'normalized', 'hu']:
+                print("Cross validation for order {} and method {}".format(order, method))
+                cross_validate(X[:20000], y[:20000], method=method, order=order)
+    else:
+        print("Options are `cnn` or `lr`")
 
-#    X = np.append(X_train, X_val)
-#    X = X.reshape(-1, 60, 60)
-#    y = np.append(y_train, y_val)
-#
-#    for order in [5, 10, 15]:
-#        for method in ['central', 'normalized', 'hu']:
-#            print("Cross validation for order {} and method {}".format(order, method))
-#            cross_validate(X[:20000], y[:20000], method=method, order=order)
-#
 
 
